@@ -1,0 +1,12 @@
+S01E03
+
+LLM Input: What is the capital city of Poland?
+LLM Output: Warsaw.
+LLM Input: What is the capital city of Germany?
+LLM Output: Berlin.
+LLM Input: What is the capital city of France?
+LLM Output: Paris.
+LLM Input: name of the 2020 USA president
+LLM Output: The President of the United States in 2020 was Donald Trump.
+
+Report response: {'code': 0, 'message': '{{FLG:JSONFIX}}'}
