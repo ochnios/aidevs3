@@ -1,0 +1,9 @@
+S00E02
+
+Robot asks: Let's switch to a different language. Commencer à parler français!. Do you know what year is it now?
+Sending answer: 1999
+Final response: {
+    "msgID": 236373,
+    "text": "{{FLG:MEMORIES}}"
+}
+Success! Flag: {{FLG:MEMORIES}}
