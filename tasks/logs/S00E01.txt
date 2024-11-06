@@ -1,0 +1,131 @@
+S00E01
+
+content:  Question:Rok powstania ONZ?
+
+answer:  1945
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   XYZ - In AI We Trust
+  </title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/fontawesome-all.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/iofrm-style.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/iofrm-theme40.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <div class="form-body without-side">
+   <div class="iofrm-layout">
+    <div class="form-holder">
+     <div class="form-content">
+      <div class="form-items">
+       <h3 class="font-md">
+        Xplore Your Zone
+       </h3>
+       <p>
+        The best patrolling robots for your factory.
+       </p>
+       <p style="color:#f00;font-weight:bold">
+        Anty-human captcha incorrect!
+       </p>
+       <p>
+        <a href="/">
+         « Back
+        </a>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/js/jquery.min.js">
+  </script>
+  <script src="/js/popper.min.js">
+  </script>
+  <script src="/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/js/main.js">
+  </script>
+ </body>
+</html>
+
+PS D:\git\aidevs3\tasks> py s00e01.py
+S00E01
+
+content:  Question:Rok założenia Facebooka?
+
+answer:  2004
+
+response: <!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   XYZ - firmware upgrade
+  </title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/fontawesome-all.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/iofrm-style.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/iofrm-theme40.css" rel="stylesheet" type="text/css"/>
+  <style>
+   dt.old {text-decoration: line-through;color:#8b8b8b}
+  </style>
+ </head>
+ <body>
+  <div class="form-body without-side">
+   <div class="iofrm-layout">
+    <div class="form-holder">
+     <div class="form-content">
+      <div class="form-items">
+       <h3 class="font-md">
+        Download section
+       </h3>
+       <p>
+        Download the latest software for your zone patrolling robot.
+       </p>
+       <dl>
+        <dt>
+         <a href="/files/0_13_4b.txt">
+          Version 0.13.4b
+         </a>
+        </dt>
+        <dd>
+         - robot no longer kills people
+         <br/>
+         - some other stability improvements
+        </dd>
+        <dt class="old">
+         Version 0.13.4
+        </dt>
+        <dd>
+         - security improvements
+        </dd>
+        <dt class="old">
+         Version 0.12.1
+        </dt>
+        <dd>
+         - added some extra security
+        </dd>
+       </dl>
+       <h2 style="background:#f4ffaa;font-family:monospace">
+        {{FLG:FIRMWARE}}
+       </h2>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/js/jquery.min.js">
+  </script>
+  <script src="/js/popper.min.js">
+  </script>
+  <script src="/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/js/main.js">
+  </script>
+ </body>
+</html>
