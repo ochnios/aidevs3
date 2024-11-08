@@ -87,7 +87,7 @@ def send_report(data: dict) -> dict:
         "answer": data
     }
     response = requests.post(
-        "https://centrala.ag3nts.org/report",
+        f"{os.getenv('AIDEVS_CENTRALA')}/report",
         json=final_answer
     )
     if not response.ok:

@@ -112,7 +112,7 @@ response: <!DOCTYPE html>
         </dd>
        </dl>
        <h2 style="background:#f4ffaa;font-family:monospace">
-        {{FLG:FIRMWARE}}
+        {{FLG:XXX}}
        </h2>
       </div>
      </div>

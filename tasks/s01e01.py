@@ -29,7 +29,7 @@ def get_answer(content) -> str:
 
 
 # Download page content
-url = "https://xyz.ag3nts.org/"
+url = os.getenv('AIDEVS_XYZ')
 response = requests.get(url)
 response.raise_for_status()  # Raise an error for bad responses
 
@@ -46,8 +46,8 @@ print("\nanswer: ", answer)
 
 # Send the returned answer with POST method as a form with values: username, password, and answer
 post_data = {
-    'username': 'tester',
-    'password': '574e112a',
+    'username': 'xxx',
+    'password': 'xxx',
     'answer': answer
 }
 post_response = requests.post(url, data=post_data)

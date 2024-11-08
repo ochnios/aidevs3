@@ -35,7 +35,7 @@ def get_correct_answer(question: str) -> str:
     return response.choices[0].message.content
 
 def verify_robot():
-    base_url = "https://xyz.ag3nts.org/verify"
+    base_url = f"{os.getenv('AIDEVS_XYZ')}/verify"
     
     # Start conversation with READY
     initial_payload = {

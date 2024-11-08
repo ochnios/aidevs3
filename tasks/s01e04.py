@@ -5,7 +5,7 @@ import json
 print('S01E04\n')
 
 def download_file(api_key: str) -> str:
-    url = f"https://centrala.ag3nts.org/data/{api_key}/cenzura.txt"
+    url = f"{os.getenv('AIDEVS_CENTRALA')}/data/{api_key}/cenzura.txt"
     response = requests.get(url)
     if not response.ok:
         raise Exception(f"Failed to download file: {response.text}")

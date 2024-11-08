@@ -9,4 +9,4 @@ LLM Output: Paris.
 LLM Input: name of the 2020 USA president
 LLM Output: The President of the United States in 2020 was Donald Trump.
 
-Report response: {'code': 0, 'message': '{{FLG:JSONFIX}}'}
+Report response: {'code': 0, 'message': '{{FLG:XXX}}'}
