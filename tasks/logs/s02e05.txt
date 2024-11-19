@@ -1,0 +1,125 @@
+S02E05
+
+
+1. Setting up directories...
+
+2. Downloading HTML...
+Using cached HTML
+HTML content length: 35597
+
+3. Converting to markdown...
+Downloading and describing AIDEVS_CENTRALA/dane/i/rynek.png...
+
+Image description for AIDEVS_CENTRALA/dane/i/rynek.png:
+Czarno-białe zdjęcie przedstawia brukowany plac oświetlony niskim słońcem, które tworzy długie cienie. Na pierwszym planie widać kilka ptaków spacerujących po bruku. W tle, na horyzoncie, znajduje się kościół z charakterystyczną wieżą. Na niebie widać chmury oraz stado ptaków w locie. Po obu stronach placu znajdują się zarysy budynków, a w oddali można dostrzec grupę ludzi. Całość tworzy nostalgiczny i spokojny nastrój.
+Downloading and describing AIDEVS_CENTRALA/dane/i/rynek_glitch.png...
+
+Image description for AIDEVS_CENTRALA/dane/i/rynek_glitch.png:
+Czarno-białe zdjęcie przedstawia miejską scenę o zmierzchu lub świcie. Na pierwszym planie widać brukowaną ulicę, po której spacerują gołębie. W tle znajduje się grupa ludzi, a nad nimi widać lecące ptaki. Po obu stronach ulicy stoją wysokie budynki, a w oddali widać wieżę z zegarem. Niebo jest pokryte chmurami, przez które przebija się światło słoneczne. Po prawej stronie obrazu widoczne są kolorowe, pionowe pasy, które wskazują na uszkodzenie pliku graficznego.
+Downloading and describing AIDEVS_CENTRALA/dane/i/fruit01.png...
+
+Image description for AIDEVS_CENTRALA/dane/i/fruit01.png:
+Czarno-białe zdjęcie przedstawia pojedynczą truskawkę leżącą na gładkiej, odbijającej światło powierzchni. Owoc jest pokryty drobnymi kropelkami wody, co dodaje mu świeżości. W tle widać rozmyte elementy wnętrza, które sugerują, że zdjęcie zostało zrobione w kuchni lub laboratorium. Liście truskawki są wyraźnie widoczne i kontrastują z teksturą owocu. Całość tworzy minimalistyczną i estetyczną kompozycję.
+Downloading and describing AIDEVS_CENTRALA/dane/i/fruit02.png...
+
+Image description for AIDEVS_CENTRALA/dane/i/fruit02.png:
+Na czarno-białym zdjęciu widać pojedynczą truskawkę leżącą na gładkiej, błyszczącej powierzchni, prawdopodobnie metalowej. Owoc jest dobrze oświetlony, co podkreśla jego teksturę i połysk. W tle znajduje się rozmyty obraz plastikowego pojemnika, co sugeruje, że zdjęcie zostało zrobione w kuchni lub miejscu przygotowywania żywności. Truskawka rzuca wyraźny cień na powierzchnię, co dodaje głębi kompozycji.
+Downloading and describing AIDEVS_CENTRALA/dane/i/strangefruit.png...
+
+Image description for AIDEVS_CENTRALA/dane/i/strangefruit.png:
+Na obrazie widzimy czarno-białą kompozycję przedstawiającą owoc będący połączeniem truskawki i wiśni. Owoc ma kształt truskawki z charakterystycznymi wypustkami na powierzchni, ale na jego szczycie znajduje się długi, cienki ogonek typowy dla wiśni. Dodatkowo, na górze owocu widoczne są małe liście. Całość jest oświetlona w sposób, który podkreśla połysk i teksturę powierzchni, tworząc efekt trójwymiarowości. Tło jest jednolite, co sprawia, że owoc jest głównym punktem obrazu.
+Downloading and describing AIDEVS_CENTRALA/dane/i/resztki.png...
+
+Image description for AIDEVS_CENTRALA/dane/i/resztki.png:
+Na czarno-białym zdjęciu widać talerz z kilkoma kawałkami pizzy. Każdy kawałek jest pokrojony na trójkąty i ułożony w kształt przypominający gwiazdę. Na pizzy znajdują się duże kawałki ananasa oraz posypka ziół. Ciasto wygląda na grube i chrupiące, a na talerzu widać ślady sosu lub tłuszczu. Całość sprawia wrażenie świeżo przygotowanej potrawy.
+Using cached audio transcription for rafal_dyktafon.mp3
+Markdown content length: 86368
+Saved to: data\arxiv\arxiv-draft.md
+
+4. Getting questions...
+Questions received: 5
+Questions: {
+  "01": "jakiego owocu użyto podczas pierwszej próby transmisji materii w czasie?",
+  "02": "Na rynku którego miasta wykonano testową fotografię użytą podczas testu przesyłania multimediów?",
+  "03": "Co Bomba chciał znaleźć w Grudziądzu?",
+  "04": "Resztki jakiego dania zostały pozostawione przez Rafała?",
+  "05": "Od czego pochodzą litery BNW w nazwie nowego modelu językowego?"
+}
+
+5. Generating answers...
+Answer for 01=jakiego owocu użyto podczas pierwszej próby transmisji materii w czasie?:
+Podczas pierwszej próby transmisji materii w czasie użyto truskawki.
+Answer for 02=Na rynku którego miasta wykonano testową fotografię użytą podczas testu przesyłania multimediów?:
+Na rynku w Krakowie.
+Answer for 03=Co Bomba chciał znaleźć w Grudziądzu?:
+Bomba chciał znaleźć hotel w Grudziądzu.
+Answer for 04=Resztki jakiego dania zostały pozostawione przez Rafała?:
+Resztki pizzy zostały pozostawione przez Rafała.
+Answer for 05=Od czego pochodzą litery BNW w nazwie nowego modelu językowego?:
+Litery BNW w nazwie nowego modelu językowego pochodzą od "Brave New World".
+Generated answers: {
+  "01": "Podczas pierwszej próby transmisji materii w czasie użyto truskawki.",
+  "02": "Na rynku w Krakowie.",
+  "03": "Bomba chciał znaleźć hotel w Grudziądzu.",
+  "04": "Resztki pizzy zostały pozostawione przez Rafała.",
+  "05": "Litery BNW w nazwie nowego modelu językowego pochodzą od \"Brave New World\"."
+}
+
+6. Sending answers to API...
+
+Response: {'code': 0, 'message': '{{FLG:XXX}}'}
+
+====================================================================================================
+PS C:\Users\Szymon\git\aidevs3\tasks> py .\s02e05.py
+S02E05
+
+
+1. Setting up directories...
+
+2. Downloading HTML...
+Using cached HTML
+HTML content length: 35597
+
+3. Converting to markdown...
+Using cached image description for rynek.png
+Using cached image description for rynek_glitch.png
+Using cached image description for fruit01.png
+Using cached image description for fruit02.png
+Using cached image description for strangefruit.png
+Using cached image description for resztki.png
+Using cached audio transcription for rafal_dyktafon.mp3
+Markdown content length: 86449
+Saved to: data\arxiv\arxiv-draft.md
+
+4. Getting questions...
+Questions received: 5
+Questions: {
+  "01": "jakiego owocu użyto podczas pierwszej próby transmisji materii w czasie?",
+  "02": "Na rynku którego miasta wykonano testową fotografię użytą podczas testu przesyłania multimediów?",
+  "03": "Co Bomba chciał znaleźć w Grudziądzu?",
+  "04": "Resztki jakiego dania zostały pozostawione przez Rafała?",
+  "05": "Od czego pochodzą litery BNW w nazwie nowego modelu językowego?"
+}
+
+5. Generating answers...
+Answer for 01=jakiego owocu użyto podczas pierwszej próby transmisji materii w czasie?:
+Podczas pierwszej próby transmisji materii w czasie użyto truskawki.
+Answer for 02=Na rynku którego miasta wykonano testową fotografię użytą podczas testu przesyłania multimediów?:
+Na rynku Krakowa.
+Answer for 03=Co Bomba chciał znaleźć w Grudziądzu?:
+Bomba chciał znaleźć hotel w Grudziądzu.
+Answer for 04=Resztki jakiego dania zostały pozostawione przez Rafała?:
+Resztki pizzy zostały pozostawione przez Rafała.
+Answer for 05=Od czego pochodzą litery BNW w nazwie nowego modelu językowego?:
+Litery BNW w nazwie nowego modelu językowego pochodzą od "Brave New World".
+Generated answers: {
+  "01": "Podczas pierwszej próby transmisji materii w czasie użyto truskawki.",
+  "02": "Na rynku Krakowa.",
+  "03": "Bomba chciał znaleźć hotel w Grudziądzu.",
+  "04": "Resztki pizzy zostały pozostawione przez Rafała.",
+  "05": "Litery BNW w nazwie nowego modelu językowego pochodzą od \"Brave New World\"."
+}
+
+6. Sending answers to API...
+
+Response: {'code': 0, 'message': '{{FLG:XXX}}'}
