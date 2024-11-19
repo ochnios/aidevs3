@@ -4,6 +4,27 @@ Using existing transcriptions
 
 Transcriptions completed/loaded
 
+Full response:
+ Reasoning:
+1. **Adam's Testimony**: Adam confuses Andrzej with Arkadiusz Maj and provides an address in Wałbrzych, which is irrelevant to Andrzej's university location.
+2. **Agnieszka's Testimony**: Agnieszka mentions Andrzej moving from Warsaw to Kraków to teach something related to informatics or mathematics, suggesting a university in Kraków.
+3. **Ardian's Testimony**: Ardian does not provide specific information about Andrzej's university location but acknowledges his scientific achievements.
+4. **Michał's Testimony**: Michał mentions Andrzej's ambition to work at a prestigious university, referring to it as a "royal university," which aligns with the Jagiellonian University in Kraków, known for its historical prestige.
+5. **Monika's Testimony**: Monika confirms Andrzej worked in Kraków, specifically mentioning the Faculty or Institute of Informatics and Computer Mathematics, which aligns with the Jagiellonian University.
+6. **Rafał's Testimony**: Rafał makes a cryptic reference to "Jagiełło," which could imply the Jagiellonian University, founded by King Władysław II Jagiełło. He also mentions a street related to a mathematician, which could be a clue to the faculty's location.
+
+Analysis:
+- The consistent mention of Kraków and references to a prestigious or "royal" university strongly suggest the Jagiellonian University.
+- Monika's specific mention of the Faculty or Institute of Informatics and Computer Mathematics aligns with the known faculties at the Jagiellonian University.
+- Rafał's cryptic mention of "Jagiełło" and a mathematician-related street further supports the Jagiellonian University, as it is historically linked to King Jagiełło.
+
+Verification:
+- The Jagiellonian University in Kraków is one of Poland's most prestigious and historically significant universities, fitting Michał's description of a "royal university."
+- The Faculty of Mathematics and Computer Science at the Jagiellonian University is located on Łojasiewicza Street, named after the mathematician Stanisław Łojasiewicz, which aligns with Rafał's mention of a mathematician-related street.
+
+Answer:
+Łojasiewicza
+
 Found street name: Łojasiewicza
 
 API Response: {'code': 0, 'message': '{{FLG:XXX}}'}

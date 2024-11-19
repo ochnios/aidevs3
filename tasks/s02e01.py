@@ -1,4 +1,5 @@
 import os
+import re
 import requests
 from pathlib import Path
 from openai import OpenAI
@@ -39,24 +40,43 @@ def get_street_name(transcriptions: str) -> str:
     response = client.chat.completions.create(
         messages=[
             {
-                "role": "user",
-                "content": """You are a helpful assistant. 
-                Based on the provided witness testimonies, determine the street where Andrzej Maj teaches. 
-                Even if the street name is not directly mentioned, use your knowledge to deduce it. Respond only with the street name."""
+                "role": "system",
+"content": """You are a detective analyzing witness testimonies to determine the location of Andrzej Maj's university (specific faculty of the university).
+
+Analyze the testimonies carefully and provide your response in the following structured format:
+
+Reasoning:
+List all relevant clues and information from testimonies.
+Analyze any contradictions or inconsistencies.
+Explain your deductive process and why certain clues might be more reliable than others.
+
+Verification:
+Cross-check your deduction against known facts about universities faculties and their locations.
+Validate if your conclusion makes logical sense given all available information.
+
+Answer:
+The final street name of the faculty only, with no additional text."""
             },
             {
                 "role": "user",
-                "content": f"""Based on these testimonies, what street is Andrzej Maj's university located on?
-                <transcriptions>
+                "content": f"""<testimonies>
                 {transcriptions}
-                </transcriptions>"""
+                </testimonies>"""
             }
         ],
-        model="o1-preview",
-        temperature=1
+        model="gpt-4o",
+        temperature=0.0
     )
-    # print(response.model_dump_json(indent=2))
-    return response.choices[0].message.content.strip()
+    
+    completion = response.choices[0].message.content.strip()
+
+    print("\nFull response:\n", completion)
+    
+    # Extract just the answer from the structured response
+    answer_match = re.search(r'Answer:\s*(.*?)$', completion, re.DOTALL | re.MULTILINE)
+    if answer_match:
+        return answer_match.group(1).strip()
+    return completion  # Fallback to full response if pattern not found
 
 def send_report(answer: str) -> dict:
     final_answer = {
