@@ -1,0 +1,9 @@
+S02E01
+
+Using existing transcriptions
+
+Transcriptions completed/loaded
+
+Found street name: Łojasiewicza
+
+API Response: {'code': 0, 'message': '{{FLG:XXX}}'}
