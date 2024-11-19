@@ -1,8 +1,7 @@
 import os
 import requests
-import json
 
-print('S01E04\n')
+print('S01E05\n')
 
 def download_file(api_key: str) -> str:
     url = f"{os.getenv('AIDEVS_CENTRALA')}/data/{api_key}/cenzura.txt"
