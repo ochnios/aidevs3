@@ -1,0 +1,87 @@
+[
+  {
+    "key": "KRAKOW",
+    "category": "city",
+    "value": "ALEKSANDER BARBARA ADAM"
+  },
+  {
+    "key": "BARBARA",
+    "category": "name",
+    "value": "[**RESTRICTED DATA**]"
+  },
+  {
+    "key": "ALEKSANDER",
+    "category": "name",
+    "value": "KRAKOW LUBLIN WARSZAWA"
+  },
+  {
+    "key": "WARSZAWA",
+    "category": "city",
+    "value": "RAFAŁ ALEKSANDER ANDRZEJ"
+  },
+  {
+    "key": "ANDRZEJ",
+    "category": "name",
+    "value": "WARSZAWA GRUDZIADZ"
+  },
+  {
+    "key": "RAFAL",
+    "category": "name",
+    "value": "GRUDZIADZ WARSZAWA LUBLIN"
+  },
+  {
+    "key": "ADAM",
+    "category": "name",
+    "value": "KRAKOW CIECHOCINEK"
+  },
+  {
+    "key": "LUBLIN",
+    "category": "city",
+    "value": "[**RESTRICTED DATA**]"
+  },
+  {
+    "key": "GRUDZIADZ",
+    "category": "city",
+    "value": "RAFAL AZAZEL"
+  },
+  {
+    "key": "CIECHOCINEK",
+    "category": "city",
+    "value": "ADAM GABRIEL"
+  },
+  {
+    "key": "AZAZEL",
+    "category": "name",
+    "value": "GRUDZIADZ WARSZAWA KRAKOW LUBLIN ELBLAG"
+  },
+  {
+    "key": "GABRIEL",
+    "category": "name",
+    "value": "FROMBORK"
+  },
+  {
+    "key": "ELBLAG",
+    "category": "city",
+    "value": "BARBARA"
+  },
+  {
+    "key": "FROMBORK",
+    "category": "city",
+    "value": "GABRIEL ARTUR AZAZEL"
+  },
+  {
+    "key": "ARTUR",
+    "category": "name",
+    "value": "KONIN"
+  },
+  {
+    "key": "KONIN",
+    "category": "city",
+    "value": "GLITCH"
+  },
+  {
+    "key": "GLITCH",
+    "category": "name",
+    "value": "https://centrala.ag3nts.org/dane/na_smartfona.png"
+  }
+]

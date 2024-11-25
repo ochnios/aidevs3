@@ -1,0 +1,164 @@
+S03E04
+
+Starting fresh analysis...
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'KRAKOW', 'category': 'city'}, {'key': 'BARBARA', 'category': 'name'}, {'key': 'ALEKSANDER', 'category': 'name'}, {'key': 'WARSZAWA', 'category': 'city'}, {'key': 'ANDRZEJ', 'category': 'name'}, {'key': 'RAFAL', 'category': 'name'}]}
+
+Processing: KRAKOW (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'ALEKSANDER', 'category': 'name'}, {'key': 'BARBARA', 'category': 'name'}, {'key': 'ADAM', 'category': 'name'}]}
+
+Processing: BARBARA (name)
+Sending request to GPT...
+Extracted entities: {'entities': []}
+
+Processing: ALEKSANDER (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'KRAKOW', 'category': 'city'}, {'key': 'LUBLIN', 'category': 'city'}, {'key': 'WARSZAWA', 'category': 'city'}]}
+
+Processing: WARSZAWA (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'RAFAL', 'category': 'name'}, {'key': 'ALEKSANDER', 'category': 'name'}, {'key': 'ANDRZEJ', 'category': 'name'}]}
+
+Processing: ANDRZEJ (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'WARSZAWA', 'category': 'city'}, {'key': 'GRUDZIADZ', 'category': 'city'}]}
+
+Processing: RAFAL (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'GRUDZIADZ', 'category': 'city'}, {'key': 'WARSZAWA', 'category': 'city'}, {'key': 'LUBLIN', 'category': 'city'}]}
+
+Processing: ADAM (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'KRAKOW', 'category': 'city'}, {'key': 'CIECHOCINEK', 'category': 'city'}]}
+
+Processing: LUBLIN (city)
+Sending request to GPT...
+Extracted entities: {'entities': []}
+
+Processing: GRUDZIADZ (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'RAFAL', 'category': 'name'}, {'key': 'AZAZEL', 'category': 'name'}]}
+
+Processing: CIECHOCINEK (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'ADAM', 'category': 'name'}, {'key': 'GABRIEL', 'category': 'name'}]}
+
+Processing: AZAZEL (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'GRUDZIADZ', 'category': 'city'}, {'key': 'WARSZAWA', 'category': 'city'}, {'key': 'KRAKOW', 'category': 'city'}, {'key': 'LUBLIN', 'category': 'city'}, {'key': 'ELBLAG', 'category': 'city'}]}
+
+Processing: GABRIEL (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'FROMBORK', 'category': 'city'}]}
+
+Processing: ELBLAG (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'BARBARA', 'category': 'name'}]}
+
+Processing: FROMBORK (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'GABRIEL', 'category': 'name'}, {'key': 'ARTUR', 'category': 'name'}, {'key': 'AZAZEL', 'category': 'name'}]}
+
+Processing: ARTUR (name)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'KONIN', 'category': 'city'}]}
+
+Processing: KONIN (city)
+Sending request to GPT...
+Extracted entities: {'entities': [{'key': 'GLITCH', 'category': 'name'}]}
+
+Processing: GLITCH (name)
+Sending request to GPT...
+Extracted entities: {'entities': []}
+
+Final results: [
+  {
+    "key": "KRAKOW",
+    "category": "city",
+    "value": "ALEKSANDER BARBARA ADAM"
+  },
+  {
+    "key": "BARBARA",
+    "category": "name",
+    "value": "[**RESTRICTED DATA**]"
+  },
+  {
+    "key": "ALEKSANDER",
+    "category": "name",
+    "value": "KRAKOW LUBLIN WARSZAWA"
+  },
+  {
+    "key": "WARSZAWA",
+    "category": "city",
+    "value": "RAFA\u0141 ALEKSANDER ANDRZEJ"
+  },
+  {
+    "key": "ANDRZEJ",
+    "category": "name",
+    "value": "WARSZAWA GRUDZIADZ"
+  },
+  {
+    "key": "RAFAL",
+    "category": "name",
+    "value": "GRUDZIADZ WARSZAWA LUBLIN"
+  },
+  {
+    "key": "ADAM",
+    "category": "name",
+    "value": "KRAKOW CIECHOCINEK"
+  },
+  {
+    "key": "LUBLIN",
+    "category": "city",
+    "value": "[**RESTRICTED DATA**]"
+  },
+  {
+    "key": "GRUDZIADZ",
+    "category": "city",
+    "value": "RAFAL AZAZEL"
+  },
+  {
+    "key": "CIECHOCINEK",
+    "category": "city",
+    "value": "ADAM GABRIEL"
+  },
+  {
+    "key": "AZAZEL",
+    "category": "name",
+    "value": "GRUDZIADZ WARSZAWA KRAKOW LUBLIN ELBLAG"
+  },
+  {
+    "key": "GABRIEL",
+    "category": "name",
+    "value": "FROMBORK"
+  },
+  {
+    "key": "ELBLAG",
+    "category": "city",
+    "value": "BARBARA"
+  },
+  {
+    "key": "FROMBORK",
+    "category": "city",
+    "value": "GABRIEL ARTUR AZAZEL"
+  },
+  {
+    "key": "ARTUR",
+    "category": "name",
+    "value": "KONIN"
+  },
+  {
+    "key": "KONIN",
+    "category": "city",
+    "value": "GLITCH"
+  },
+  {
+    "key": "GLITCH",
+    "category": "name",
+    "value": "AIDEVS_CENTRALA/dane/na_smartfona.png"
+  }
+]
+
+Sending answer: ELBLAG
+Report response: {'code': 0, 'message': '{{FLG:XXX}}'}
