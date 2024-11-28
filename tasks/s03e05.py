@@ -1,7 +1,6 @@
 import os
 import requests
 from neo4j import GraphDatabase
-from openai import OpenAI
 
 print('S03E05\n')
 

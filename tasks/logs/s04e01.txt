@@ -1,0 +1,97 @@
+S04E01
+
+
+Sending request: {'task': 'photos', 'apikey': '***', 'answer': 'START'}
+Response: {'code': 0, 'message': 'Siemano! Powiedzieli Ci, że mam fotki. No mam! Oto one: IMG_559.PNG, IMG_1410.PNG, IMG_1443.PNG, IMG_1444.PNG. Wszystkie siedzą sobie tutaj: AIDEVS_CENTRALA/dane/barbara/. Pamiętaj, że zawsze mogę\xa0poprawić\xa0je dla Ciebie (polecenia: REPAIR/DARKEN/BRIGHTEN).'}
+
+================================================================================
+LLM Request for URL extraction:
+System: Extract image filenames from the message. Look for patterns like IMG_*.PNG.
+Return them as a JSON array of strings containing just the filenames.
+If no filenames found, return an empty array.
+Message: Siemano! Powiedzieli Ci, że mam fotki. No mam! Oto one: IMG_559.PNG, IMG_1410.PNG, IMG_1443.PNG, IMG_1444.PNG. Wszystkie siedzą sobie tutaj: AIDEVS_CENTRALA/dane/barbara/. Pamiętaj, że zawsze mogę poprawić je dla Ciebie (polecenia: REPAIR/DARKEN/BRIGHTEN).
+================================================================================
+
+Extracted URLs: ['AIDEVS_CENTRALA/dane/barbara/IMG_559.PNG', 'AIDEVS_CENTRALA/dane/barbara/IMG_1410.PNG', 'AIDEVS_CENTRALA/dane/barbara/IMG_1443.PNG', 'AIDEVS_CENTRALA/dane/barbara/IMG_1444.PNG']
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_559-small.PNG
+Downloaded image: IMG_559-small.PNG
+Analysis result: REPAIR IMG_559-small.PNG
+
+Sending request: {'task': 'photos', 'apikey': '***', 'answer': 'REPAIR IMG_559-small.PNG'}
+Response: {'code': 0, 'message': 'Się robi! Czekaj... czekaj... o! Usunąłem uszkodzenia. Proszę: IMG_559_FGR4.PNG'}
+
+================================================================================
+LLM Request for URL extraction:
+System: Extract image filenames from the message. Look for patterns like IMG_*.PNG.
+Return them as a JSON array of strings containing just the filenames.
+If no filenames found, return an empty array.
+Message: Się robi! Czekaj... czekaj... o! Usunąłem uszkodzenia. Proszę: IMG_559_FGR4.PNG
+================================================================================
+
+Extracted URLs: ['AIDEVS_CENTRALA/dane/barbara/IMG_559_FGR4.PNG']
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_559_FGR4-small.PNG
+Downloaded image: IMG_559_FGR4-small.PNG
+Analysis result: DARKEN IMG_559_FGR4-small.PNG
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_1410-small.PNG
+Downloaded image: IMG_1410-small.PNG
+Analysis result: BRIGHTEN IMG_1410-small.PNG
+
+Sending request: {'task': 'photos', 'apikey': '***', 'answer': 'BRIGHTEN IMG_1410-small.PNG'}
+Response: {'code': 0, 'message': 'NO! Teraz widać\xa0twarze i włosy. To był dobry pomysł! AIDEVS_CENTRALA/dane/barbara/IMG_1410_FXER.PNG'}
+
+================================================================================
+LLM Request for URL extraction:
+System: Extract image filenames from the message. Look for patterns like IMG_*.PNG.
+Return them as a JSON array of strings containing just the filenames.
+If no filenames found, return an empty array.
+Message: NO! Teraz widać twarze i włosy. To był dobry pomysł! AIDEVS_CENTRALA/dane/barbara/IMG_1410_FXER.PNG
+================================================================================
+
+Extracted URLs: ['AIDEVS_CENTRALA/dane/barbara/IMG_1410_FXER.PNG']
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_1410_FXER-small.PNG
+Downloaded image: IMG_1410_FXER-small.PNG
+Analysis result: PHOTO_OK
+Found good photo after correction: data/photos\IMG_1410_FXER-small.PNG
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_1443-small.PNG
+Downloaded image: IMG_1443-small.PNG
+Analysis result: REPAIR IMG_1443-small.PNG
+
+Sending request: {'task': 'photos', 'apikey': '***', 'answer': 'REPAIR IMG_1443-small.PNG'}
+Response: {'code': 0, 'message': 'Pyk, pyk, pyk, pytk jako tako i fajrant! Dałem z siebie całe 30% - proszę: IMG_1443_FT12.PNG'}
+
+================================================================================
+LLM Request for URL extraction:
+System: Extract image filenames from the message. Look for patterns like IMG_*.PNG.
+Return them as a JSON array of strings containing just the filenames.
+If no filenames found, return an empty array.
+Message: Pyk, pyk, pyk, pytk jako tako i fajrant! Dałem z siebie całe 30% - proszę: IMG_1443_FT12.PNG
+================================================================================
+
+Extracted URLs: ['AIDEVS_CENTRALA/dane/barbara/IMG_1443_FT12.PNG']
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_1443_FT12-small.PNG
+Downloaded image: IMG_1443_FT12-small.PNG
+Analysis result: PHOTO_OK
+Found good photo after correction: data/photos\IMG_1443_FT12-small.PNG
+Downloading image from: AIDEVS_CENTRALA/dane/barbara/IMG_1444-small.PNG
+Downloaded image: IMG_1444-small.PNG
+Analysis result: SKIP
+Found 2 good photos, generating final description
+
+================================================================================
+LLM Request for description:
+Twoim zadaniem jest stworzenie szczegółowego opisu postaci widocznej na załączonych ilustracjach.
+Skup się tylko na postaci pojawiającej się na większości ilustracji.
+Zwróć uwagę na:
+1. Dokładny kolor włosów (bądź bardzo precyzyjny co do odcienia)
+2. Cechach charakterystycznych, znaki szczególne, znamiona
+3. Okulary i biżuterię
+4. Ubranies
+
+Bądź bardzo precyzyjny i szczegółowy. Odpowiedz w języku polskim podając jedynie opis bez zbędnych komentarzy.
+================================================================================
+
+Generated description:
+Osoba na ilustracjach ma długie, czarne włosy. Nosi okulary o ciemnych oprawkach. Na lewym ramieniu ma tatuaż przedstawiający pająka. Ubrana jest w szary t-shirt. Na nadgarstku ma czarną opaskę, prawdopodobnie sportową.
+
+Sending request: {'task': 'photos', 'apikey': '***', 'answer': 'Osoba na ilustracjach ma długie, czarne włosy. Nosi okulary o ciemnych oprawkach. Na lewym ramieniu ma tatuaż przedstawiający pająka. Ubrana jest w szary t-shirt. Na nadgarstku ma czarną opaskę, prawdopodobnie sportową.'}
+Response: {'code': 0, 'message': '{{FLG:XXX}}'}
