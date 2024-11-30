@@ -1,0 +1,151 @@
+S04E01
+
+Preparing training data...
+Creating fine-tuned model...
+
+Training file uploaded with ID: file-9TTyme46DA8it82yoG5oab
+Validation file uploaded with ID: file-X8NoLrwjp5LAzHh7SkNQRy
+Fine-tuning job created with ID: ftjob-0Y9CyRcCs22vtoBe1sJK4z3p
+
+Job status: validating_files
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs='auto', batch_size='auto', learning_rate_multiplier='auto'), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='validating_files', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=None, integrations=[], user_provided_suffix=None)
+
+Job status: validating_files
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='validating_files', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=None, integrations=[], user_provided_suffix=None)
+
+Job status: validating_files
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='validating_files', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=None, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=None, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=None, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963602, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963579, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963580, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963583, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963577, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963580, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963574, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963613, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963615, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963615, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963606, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963607, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963599, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963602, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963614, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963622, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963614, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963616, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963618, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963610, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963613, integrations=[], user_provided_suffix=None)
+
+Job status: running
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model=None, finished_at=None, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=[], seed=1228827823, status='running', trained_tokens=None, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=1732963606, integrations=[], user_provided_suffix=None)
+
+Job status: succeeded
+Job details: FineTuningJob(id='ftjob-0Y9CyRcCs22vtoBe1sJK4z3p', created_at=1732962027, error=Error(code=None, message=None, param=None), fine_tuned_model='ft:gpt-4o-mini-2024-07-18:personal::AZFIIh8n', finished_at=1732963632, hyperparameters=Hyperparameters(n_epochs=3, batch_size=1, learning_rate_multiplier=1.8), model='gpt-4o-mini-2024-07-18', object='fine_tuning.job', organization_id='org-lSrthhyRd6IDjnZOAj1rNu3l', result_files=['file-XTB18VFaFyD7mN9TkjC3dM'], seed=1228827823, status='succeeded', trained_tokens=40500, training_file='file-9TTyme46DA8it82yoG5oab', validation_file='file-X8NoLrwjp5LAzHh7SkNQRy', estimated_finish=None, integrations=[], user_provided_suffix=None)
+Model created: ft:gpt-4o-mini-2024-07-18:personal::AZFIIh8n
+Classifying results...
+
+Classifying result 01:
+Input: 12,100,3,39
+Model output: correct
+ID 01 classified as correct
+
+Classifying result 02:
+Input: -41,75,67,-25
+Model output: correct
+ID 02 classified as correct
+
+Classifying result 03:
+Input: 78,38,65,2
+Model output: incorrect
+ID 03 classified as incorrect
+
+Classifying result 04:
+Input: 5,64,67,30
+Model output: incorrect
+ID 04 classified as incorrect
+
+Classifying result 05:
+Input: 33,-21,16,-72
+Model output: incorrect
+ID 05 classified as incorrect
+
+Classifying result 06:
+Input: 99,17,69,61
+Model output: incorrect
+ID 06 classified as incorrect
+
+Classifying result 07:
+Input: 17,-42,-65,-43
+Model output: incorrect
+ID 07 classified as incorrect
+
+Classifying result 08:
+Input: 57,-83,-54,-43
+Model output: incorrect
+ID 08 classified as incorrect
+
+Classifying result 09:
+Input: 67,-55,-6,-32
+Model output: incorrect
+ID 09 classified as incorrect
+
+Classifying result 10:
+Input: -20,-23,-2,44
+Model output: correct
+ID 10 classified as correct
+Found correct IDs: ['01', '02', '10']
+
+Sending answer to API...
+
+Sending answer to API: ['01', '02', '10']
+API Response (200): {'code': 0, 'message': '{{FLG:XXX}}'}
+Result: {'code': 0, 'message': '{{FLG:XXX}}'}

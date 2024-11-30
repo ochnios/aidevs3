@@ -188,7 +188,7 @@ If no filenames found, return an empty array."""
                 "content": message
             }
         ],
-        model="gpt-4",
+        model="gpt-4o",
         temperature=0.0
     )
     
