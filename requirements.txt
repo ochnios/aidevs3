@@ -3,3 +3,4 @@ openai
 beautifulsoup4
 qdrant-client
 neo4j
+firecrawl
