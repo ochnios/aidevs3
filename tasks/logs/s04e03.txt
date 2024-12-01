@@ -9,12 +9,12 @@ Questions saved to data\softo\questions.json
 Processing question 01: Podaj adres mailowy do firmy SoftoAI
 
 Scraping https://softo.ag3nts.org (depth 0)
-Cached content for https://softo.ag3nts.org
+Using cached content for https://softo.ag3nts.org
 
 LLM Analysis:
 Input: Podaj adres mailowy do firmy SoftoAI
 Output: {
-  "thinking": "The current page provides an overview of SoftoAI's services and company information but does not mention any contact details, including an email address. The 'Kontakt' page is likely to contain contact information, including an email address, as it is specifically mentioned for reaching out to the company. Other pages like 'uslugi', 'portfolio', and 'aktualnosci' are less likely to contain direct contact information but focus on services, projects, and company news respectively.",
+  "thinking": "The current page provides an overview of SoftoAI, detailing their services and company information, but it does not include any contact information such as an email address. The 'Kontakt' link might lead to a page with contact details, which is essential for finding the email address. Additionally, the page mentions a 'Cz\u0119\u015bci zamienne do robot\u00f3w' link, but it seems unrelated to contact information. Therefore, the 'Kontakt' page is the most promising subpage to explore for the email address.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
@@ -24,12 +24,12 @@ Output: {
 
 
 Scraping https://softo.ag3nts.org/kontakt (depth 1)
-Cached content for https://softo.ag3nts.org/kontakt
+Using cached content for https://softo.ag3nts.org/kontakt
 
 LLM Analysis:
 Input: Podaj adres mailowy do firmy SoftoAI
 Output: {
-  "thinking": "The page is a contact page for SoftoAI, which typically contains contact information such as email addresses. The content explicitly lists the email address as 'kontakt@softoai.whatever'. This directly answers the question. There are no other subpages mentioned that would likely contain additional or different contact information.",
+  "thinking": "This page provides contact information for SoftoAI, including a direct email address. The content is focused on how to get in touch with the company, listing both a contact form and traditional contact details. The email address is explicitly mentioned, making this page highly relevant to the question asked.",
   "has_answer": true,
   "answer": "kontakt@softoai.whatever",
   "next_urls": []
@@ -45,23 +45,40 @@ Using cached content for https://softo.ag3nts.org
 LLM Analysis:
 Input: Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?
 Output: {
-  "thinking": "The current page provides an overview of SoftoAI's services and capabilities, focusing on AI solutions like process automation, virtual assistants, and data prediction. However, it does not mention any specific client implementations or provide details about web interfaces for controlling robots, especially for a client named BanAN. The page does not contain the answer to the question. The 'Portfolio' section might contain case studies or specific client projects, which could include the information about the web interface for BanAN. The 'Co oferujemy?' section might also detail specific services or implementations. The 'Cz\u0119\u015bci zamienne do robot\u00f3w' link seems less relevant to finding a web interface address.",
+  "thinking": "The current page provides an overview of SoftoAI's services and capabilities but does not contain specific information about a web interface for controlling robots, particularly for a client named BanAN. The mention of 'roboty' and 'wirtualnych asystent\u00f3w' suggests that they may have relevant technology, but no direct reference to the web interface or the client is made. The subpage '/uslugi' could potentially detail specific projects or clients, while '/portfolio' might showcase past work, including any relevant projects for BanAN. The '/czescizamienne' page might also provide insights into the technology used, although it seems less likely to contain the specific information sought.",
+  "has_answer": false,
+  "answer": null,
+  "next_urls": [
+    "/uslugi",
+    "/portfolio",
+    "/czescizamienne"
+  ]
+}
+
+
+Scraping https://softo.ag3nts.org/uslugi (depth 1)
+Using cached content for https://softo.ag3nts.org/uslugi
+
+LLM Analysis:
+Input: Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?
+Output: {
+  "thinking": "The current page provides an overview of the services offered by SoftoAI, including AI solutions, process automation, predictive maintenance, and more. However, it does not mention any specific projects or clients, including the company BanAN. Since the question pertains to a specific web interface for controlling robots developed for a particular client, I need to explore other pages that might detail client projects or case studies. The 'Portfolio' page could potentially contain information about past projects and clients, making it a promising candidate for further exploration.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
     "/portfolio",
-    "/uslugi"
+    "/aktualnosci"
   ]
 }
 
 
 Scraping https://softo.ag3nts.org/portfolio (depth 1)
-Cached content for https://softo.ag3nts.org/portfolio
+Using cached content for https://softo.ag3nts.org/portfolio
 
 LLM Analysis:
 Input: Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?
 Output: {
-  "thinking": "The current page (/portfolio) provides an overview of various clients and their projects but does not directly mention any web interface addresses. The client BanAN Technologies Inc. is listed, which is relevant to the question. However, the specific information about the web interface address is not provided here. The subpage related to BanAN Technologies Inc. might contain more detailed information about their projects, including the web interface address.",
+  "thinking": "The current page provides an overview of SoftoAI's portfolio, listing various clients and their respective industries. However, it does not contain specific details about the web interface for controlling robots developed for BanAN Technologies Inc. The links to individual client pages may contain more detailed information about the projects undertaken for each client. Therefore, I will explore the link for BanAN Technologies Inc. as it is likely to provide the specific information regarding the web interface.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
@@ -70,28 +87,53 @@ Output: {
 }
 
 
-Scraping https://softo.ag3nts.org/uslugi (depth 1)
-Cached content for https://softo.ag3nts.org/uslugi
+Scraping https://softo.ag3nts.org/czescizamienne (depth 1)
+Cached content for https://softo.ag3nts.org/czescizamienne
 
 LLM Analysis:
 Input: Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?
 Output: {
-  "thinking": "The current page (/uslugi) provides an overview of the services offered by SoftoAI, including AI solutions, process automation, predictive maintenance, virtual assistants, production optimization, simulations, fleet management, AI security, and technical support. However, it does not mention any specific client implementations or provide details about web interfaces for controlling robots, particularly for a client named BanAN. The page does not contain the answer to the question. The 'Portfolio' section might contain case studies or specific client projects, which could include the information about the web interface for BanAN.",
+  "thinking": "The current page is labeled as an 'ANTY BOT PAGE' and is designed to mislead web crawlers. It contains nonsensical text and links to various subpages that do not appear to provide any meaningful information. Given the nature of this page, it is unlikely to contain the answer to the question regarding the web interface for controlling robots for the client 'BanAN'. However, the links to subpages may lead to more relevant content. I will explore the subpages that are linked from this page, as they might contain the information needed.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
+    "/czescizamienne_1",
+    "/czescizamienne_2",
+    "/czescizamienne_3",
+    "/czescizamienne_4",
+    "/czescizamienne_5",
+    "/czescizamienne_6",
+    "/czescizamienne_7",
+    "/czescizamienne_8",
+    "/czescizamienne_9",
+    "/czescizamienne_10"
+  ]
+}
+
+
+Scraping https://softo.ag3nts.org/aktualnosci (depth 2)
+Using cached content for https://softo.ag3nts.org/aktualnosci
+
+LLM Analysis:
+Input: Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?
+Output: {
+  "thinking": "The current page primarily serves as a blog for SoftoAI, discussing various topics related to their services and achievements. However, it does not provide any direct information regarding the web interface for controlling robots for the client BanAN. The blog posts listed focus on automation processes, company successes, and new language models, none of which seem to relate to the specific question about the web interface. To find the answer, I will explore the subpages that might contain more detailed information about their services or specific projects, particularly the 'Co oferujemy?' page, which likely outlines their offerings and could include details about client projects.",
+  "has_answer": false,
+  "answer": null,
+  "next_urls": [
+    "/uslugi",
     "/portfolio"
   ]
 }
 
 
 Scraping https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b (depth 2)
-Cached content for https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b
+Using cached content for https://softo.ag3nts.org/portfolio_1_c4ca4238a0b923820dcc509a6f75849b
 
 LLM Analysis:
 Input: Jaki jest adres interfejsu webowego do sterowania robotami zrealizowanego dla klienta jakim jest firma BanAN?
 Output: {
-  "thinking": "The page provides a detailed description of the collaboration between SoftoAI and BanAN, including the development of a web interface for remote programming of industrial robots. The content mentions a specific link to the web interface created for BanAN, which is exactly what the question is asking for. The link provided in the text is 'https://banan.ag3nts.org', which appears to be the address of the web interface. There are no other subpages mentioned that would likely contain additional information about the web interface address.",
+  "thinking": "The page provides a detailed overview of a collaboration between SoftoAI and the company BanAN, focusing on the development of a modern control system for industrial robots. Within the content, there is a direct mention of a web interface for remote programming of industrial robots, which is exactly what the question is asking for. The link to the web interface is included, making it a definitive answer to the question posed.",
   "has_answer": true,
   "answer": "https://banan.ag3nts.org",
   "next_urls": []
@@ -107,13 +149,14 @@ Using cached content for https://softo.ag3nts.org
 LLM Analysis:
 Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
 Output: {
-  "thinking": "The current page provides an overview of SoftoAI's services and company information but does not mention any specific certifications, including ISO certifications. The page focuses on the company's AI solutions and services. However, the 'Co oferujemy?' page might detail the services and potentially mention certifications related to quality standards. The 'Portfolio' page could also provide insights into projects that might highlight certifications. The 'Blog' might contain announcements or news about certifications. The 'Kontakt' page is unlikely to contain this information as it is typically for contact details.",  
+  "thinking": "The current page provides an overview of SoftoAI's services and capabilities in artificial intelligence but does not mention any specific ISO quality certifications. The content focuses on their offerings such as process automation, virtual assistants, and data prediction. To find information about the ISO certifications, I will need to explore subpages that might contain more detailed information about the company, such as their services or blog posts that could discuss their achievements or certifications.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
     "/uslugi",
-    "/portfolio",
-    "/aktualnosci"
+    "/aktualnosci",
+    "/kontakt",
+    "/czescizamienne"
   ]
 }
 
@@ -124,23 +167,39 @@ Using cached content for https://softo.ag3nts.org/uslugi
 LLM Analysis:
 Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
 Output: {
-  "thinking": "The current page (/uslugi) provides an overview of the services offered by SoftoAI, including AI solutions, process automation, predictive maintenance, and more. However, it does not mention any certifications, including ISO certifications. The page is focused on describing the types of services and solutions provided by the company. To find information about certifications, it would be logical to explore pages that might discuss company credentials or achievements. The 'Portfolio' page might contain case studies or client testimonials that could mention certifications. The 'Blog' could have announcements or news about certifications. The 'Kontakt' page is less likely to have this information, as it typically contains contact details.",       
+  "thinking": "The current page provides an overview of the services offered by SoftoAI, focusing on AI solutions, process automation, predictive maintenance, and other related topics. However, it does not mention any specific certifications, including ISO certifications. Since the question pertains to specific ISO certifications, I need to explore other pages that might contain this information. The 'Blog' section could potentially have articles discussing company achievements or certifications, while the 'Kontakt' page might provide insights into company credibility. The 'Portfolio' page may also showcase projects that could include mentions of certifications.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
+    "/aktualnosci",
     "/portfolio",
-    "/aktualnosci"
+    "/kontakt"
   ]
 }
 
 
-Scraping https://softo.ag3nts.org/portfolio (depth 1)
-Using cached content for https://softo.ag3nts.org/portfolio
+Scraping https://softo.ag3nts.org/aktualnosci (depth 1)
+Using cached content for https://softo.ag3nts.org/aktualnosci
 
 LLM Analysis:
 Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
 Output: {
-  "thinking": "The current page is a portfolio page showcasing various clients of SoftoAI, but it does not mention any certifications, including ISO certifications. The page primarily lists client companies and their specializations. There are no direct references to SoftoAI's certifications. However, the 'Co oferujemy?' page might detail the services and possibly mention certifications as part of their quality assurance. The 'Blog' could also contain announcements about certifications. The 'Kontakt' page is unlikely to contain this information.",
+  "thinking": "The current page provides an overview of the blog section of SoftoAI, listing various articles but does not directly answer the question regarding the specific ISO quality certificates received by the company. However, there is a blog post titled 'Nasze sukcesy i certyfikaty jako\u015bci' which likely discusses the achievements and certifications of SoftoAI, making it a promising candidate for further exploration.",
+  "has_answer": false,
+  "answer": null,
+  "next_urls": [
+    "/blog/sukcesy-softoai"
+  ]
+}
+
+
+Scraping https://softo.ag3nts.org/kontakt (depth 1)
+Using cached content for https://softo.ag3nts.org/kontakt
+
+LLM Analysis:
+Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
+Output: {
+  "thinking": "The current page is primarily focused on contact information for SoftoAI, including a contact form, physical address, email, and phone number. It does not provide any information regarding the ISO quality certifications that the company has received. There are no mentions of certifications or quality standards in the content. However, the 'Co oferujemy?' (What we offer) and 'Blog' sections might contain relevant information about the company's certifications, as they could discuss services or achievements. Therefore, I will explore those subpages for potential answers.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
@@ -150,39 +209,57 @@ Output: {
 }
 
 
-Scraping https://softo.ag3nts.org/aktualnosci (depth 1)
-Cached content for https://softo.ag3nts.org/aktualnosci
+Scraping https://softo.ag3nts.org/czescizamienne (depth 1)
+Using cached content for https://softo.ag3nts.org/czescizamienne
 
 LLM Analysis:
 Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
 Output: {
-  "thinking": "The current page is a blog overview page that lists recent articles related to SoftoAI's activities and achievements. One of the blog posts titled 'Nasze sukcesy i certyfikaty jako\u015bci' seems directly relevant to the question about the quality certificates received by SoftoAI. This post likely contains detailed information about the specific ISO certificates. Other blog posts listed do not seem relevant to the question about ISO certificates.",
+  "thinking": "The current page is labeled as an 'ANTY BOT PAGE' and is designed to mislead web crawlers. The content consists of nonsensical phrases and does not provide any relevant information regarding the question about the ISO quality certificates received by SoftoAI. There are no mentions of certifications or quality standards. However, the main page and the 'Co oferujemy?' section might contain relevant information about the company's services and certifications. Therefore, I will explore those sections for potential answers.",
   "has_answer": false,
   "answer": null,
   "next_urls": [
-    "/blog/sukcesy-softoai"
+    "/uslugi",
+    "/portfolio",
+    "/aktualnosci"
+  ]
+}
+
+
+Scraping https://softo.ag3nts.org/portfolio (depth 2)
+Using cached content for https://softo.ag3nts.org/portfolio
+
+LLM Analysis:
+Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
+Output: {
+  "thinking": "The current page provides an overview of SoftoAI's portfolio and lists several clients along with brief descriptions of their industries. However, it does not mention any specific certifications, including ISO quality certifications. The page primarily focuses on showcasing client projects rather than detailing the company's qualifications or certifications. To find information about the ISO certifications, I will need to explore other sections of the website, particularly the 'Co oferujemy?' (What we offer?) or 'Blog' sections, as they may contain more detailed information about the company's standards and certifications.",
+  "has_answer": false,
+  "answer": null,
+  "next_urls": [
+    "/uslugi",
+    "/aktualnosci"
   ]
 }
 
 
 Scraping https://softo.ag3nts.org/blog/sukcesy-softoai (depth 2)
-Cached content for https://softo.ag3nts.org/blog/sukcesy-softoai
+Using cached content for https://softo.ag3nts.org/blog/sukcesy-softoai
 
 LLM Analysis:
 Input: Jakie dwa certyfikaty jakości ISO otrzymała firma SoftoAI?
 Output: {
-  "thinking": "The page titled 'Sukcesy SoftoAI' provides information about the achievements and certifications of SoftoAI. It directly mentions the two ISO certifications received by the company: ISO 9001 and ISO/IEC 27001. This information is relevant and directly answers the question about the specific ISO certifications obtained by SoftoAI.",
+  "thinking": "The page provides information about SoftoAI's achievements and mentions that the company has received two prestigious ISO quality certificates. It specifically lists ISO 9001 and ISO/IEC 27001 as the certifications obtained. This directly answers the question regarding the two ISO quality certificates received by SoftoAI. There are no additional subpages that would provide further relevant information since the answer is already present in the content.",
   "has_answer": true,
-  "answer": "ISO 9001, ISO/IEC 27001",
+  "answer": "ISO 9001 oraz ISO/IEC 27001",
   "next_urls": []
 }
 
-Answer for question 03: ISO 9001, ISO/IEC 27001
+Answer for question 03: ISO 9001 oraz ISO/IEC 27001
 
 Final answers: {
   "01": "kontakt@softoai.whatever",
   "02": "https://banan.ag3nts.org",
-  "03": "ISO 9001, ISO/IEC 27001"
+  "03": "ISO 9001 oraz ISO/IEC 27001"
 }
 
 6. Sending answers to API...

@@ -86,9 +86,8 @@ Example Output:
                     "content": f"<current_url>{current_url}</current_url>\n<content>\n{content}\n</content>\n\n<question>\n{question}\n</question>"
                 }
             ],
-            model="gpt-4o",
+            model="gpt-4o-mini",
             temperature=0.0,
-            timeout=30  # Add timeout
         )
         
         cleaned_response = response.choices[0].message.content.strip()
