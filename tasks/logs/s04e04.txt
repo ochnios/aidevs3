@@ -1,0 +1,79 @@
+# py s04e04.py
+S04E04
+
+
+Loading map data...
+
+Starting webhook server on port PORT...
+ * Serving Flask app 's04e04'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:PORT
+Press CTRL+C to quit
+
+Received webhook request: {
+  "instruction": "Dobra. To co? zaczynamy? Odpalam silniki. Czas na kolejny lot. Jesteś moimi oczami. Lecimy w dół, albo nie! nie! czekaaaaj. Polecimy wiem jak. W prawo i dopiero teraz w dół. Tak będzie OK. Co widzisz?"
+}
+
+LLM Analysis:
+Input: Dobra. To co? zaczynamy? Odpalam silniki. Czas na kolejny lot. Jesteś moimi oczami. Lecimy w dół, albo nie! nie! czekaaaaj. Polecimy wiem jak. W prawo i dopiero teraz w dół. Tak będzie OK. Co widzisz?
+Output: {
+  "thinking": "Zaczynamy od pozycji startowej drona, która nie została określona, więc przyjmuję, że dron startuje z pozycji (0,0) na mapie. Następnie wykonujemy instrukcje: najpierw ruch w prawo, co oznacza przejście do pozycji (0,1), gdzie znajduje się 'TRAWA'. Następnie ruch w dół, co przenosi drona do pozycji (1,1), gdzie również znajduje się 'WIATRAK'.",
+  "description": "WIATRAK"
+}
+
+Sending response: {
+  "thinking": "Zaczynamy od pozycji startowej drona, która nie została określona, więc przyjmuję, że dron startuje z pozycji (0,0) na mapie. Następnie wykonujemy instrukcje: najpierw ruch w prawo, co oznacza przejście do pozycji (0,1), gdzie znajduje się 'TRAWA'. Następnie ruch w dół, co przenosi drona do pozycji (1,1), gdzie również znajduje się 'WIATRAK'.",
+  "description": "WIATRAK"
+}
+127.0.0.1 - - [02/Dec/2024 17:56:52] "POST / HTTP/1.1" 200 -
+
+Received webhook request: {
+  "instruction": "Słuchaj kolego. Lecimy na maksa w prawo, a później ile wlezie w dół. Co tam widzisz?"
+}
+
+LLM Analysis:
+Input: Słuchaj kolego. Lecimy na maksa w prawo, a później ile wlezie w dół. Co tam widzisz?
+Output: {
+  "thinking": "Zaczynamy od pozycji startowej drona, która nie została podana, więc zakładam, że dron startuje z lewego górnego rogu mapy, czyli z pozycji (0,0). Pierwsza instrukcja to 'lecimy na maksa w prawo'. Na mapie mamy 4 kolumny, więc dron przemieszcza się do pozycji (0,3), co odpowiada 'DOM'. Następnie instrukcja mówi 'ile wlezie w dół'. Z pozycji (0,3) dron przemieszcza się w dół do (1,3), co odpowiada 'DRZEWO', następnie do (2,3), co również odpowiada 'DRZEWO', a następnie do (3,3), co odpowiada 'JASKINIA'. Dron nie może już lecieć w dół, ponieważ osiągnął dolny brzeg mapy.",
+  "description": "JASKINIA"
+}
+
+Sending response: {
+  "thinking": "Zaczynamy od pozycji startowej drona, która nie została podana, więc zakładam, że dron startuje z lewego górnego rogu mapy, czyli z pozycji (0,0). Pierwsza instrukcja to 'lecimy na maksa w prawo'. Na mapie mamy 4 kolumny, więc dron przemieszcza się do pozycji (0,3), co odpowiada 'DOM'. Następnie instrukcja mówi 'ile wlezie w dół'. Z pozycji (0,3) dron przemieszcza się w dół do (1,3), co odpowiada 'DRZEWO', następnie do (2,3), co również odpowiada 'DRZEWO', a następnie do (3,3), co odpowiada 'JASKINIA'. Dron nie może już lecieć w dół, ponieważ osiągnął dolny brzeg mapy.",
+  "description": "JASKINIA"
+}
+127.0.0.1 - - [02/Dec/2024 17:56:55] "POST / HTTP/1.1" 200 -
+
+Received webhook request: {
+  "instruction": "Polecimy na sam dół mapy, a później o dwa pola w prawo. Co tam jest?"
+}
+
+LLM Analysis:
+Input: Polecimy na sam dół mapy, a później o dwa pola w prawo. Co tam jest?
+Output: {
+  "thinking": "Zaczynamy od lokalizacji drona, która na początku nie została podana, więc zakładam, że dron startuje z pozycji (0,0) - czyli z pola 'DRON'. Następnie wykonujemy instrukcję polecenia: 'na sam dół mapy', co oznacza, że przesuwamy się do najniższego wiersza mapy, czyli do wiersza 3. Wiersz 3 to 'GÓRA,GÓRA,SAMOCHÓD,JASKINIA'. Teraz dron znajduje się na pozycji (3,0) - czyli na 'GÓRA'. Następnie wykonujemy drugą część instrukcji: 'o dwa pola w prawo'. Z pozycji (3,0) przesuwamy się o dwa pola w prawo do pozycji (3,2), co odpowiada 'SAMOCHÓD'.",
+  "description": "SAMOCHÓD"
+}
+
+Sending response: {
+  "thinking": "Zaczynamy od lokalizacji drona, która na początku nie została podana, więc zakładam, że dron startuje z pozycji (0,0) - czyli z pola 'DRON'. Następnie wykonujemy instrukcję polecenia: 'na sam dół mapy', co oznacza, że przesuwamy się do najniższego wiersza mapy, czyli do wiersza 3. Wiersz 3 to 'GÓRA,GÓRA,SAMOCHÓD,JASKINIA'. Teraz dron znajduje się na pozycji (3,0) - czyli na 'GÓRA'. Następnie wykonujemy drugą część instrukcji: 'o dwa pola w prawo'. Z pozycji (3,0) przesuwamy się o dwa pola w prawo do pozycji (3,2), co odpowiada 'SAMOCHÓD'.",
+  "description": "SAMOCHÓD"
+}
+127.0.0.1 - - [02/Dec/2024 17:56:59] "POST / HTTP/1.1" 200 -
+
+
+# ssh -R PORT:127.0.0.1:PORT agentXYZ@AZYL -p 5022
+# py s04e04.py -start
+S04E04
+
+
+Sending webhook URL to API...
+Webhook response: {
+    "code": 0,
+    "message": "{{FLG:XXX}}"
+}
+Response: {
+  "code": 0,
+  "message": "{{FLG:XXX}}"
+}

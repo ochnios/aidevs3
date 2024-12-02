@@ -26,22 +26,21 @@ def analyze_drone_location(instruction: str) -> dict:
             messages=[
                 {
                     "role": "system",
-                    "content": f"""You are a drone navigation expert. Analyze the provided map and drone movement instructions to determine the final drone location.
+                    "content": f"""Jesteś ekspertem do spraw nawigacji dronów. Przeanalizuj dostarczoną mapę i instrukcje ruchu drona, aby określić jego ostateczną lokalizację na mapie.
 
-Rules:
-1. The response must be in Polish
-2. The location description must be maximum 2 words
-3. Be precise and concise
-4. Use thinking field to explain your reasoning
+Zasady:
+1. Użyj pola "thinking", aby krop po kroku przejść prze instrukcje i wyjaśnić swoje rozumowanie
+2. W polu "description" podaj lokalizację drona na mapie po wykonaniu wszystkich instrukcji użytkownika
+3. Nie dodawaj ŻADNYCH zbędnych komentarzy w polu "description"
 
 <map>
 {map_content}
 </map>
 
-Output format:
+Format wyjściowy:
 {{
-    "thinking": "Explain your reasoning here",
-    "description": "max two words in Polish describing the final location"
+    "thinking": "Wyjaśnij swoje rozumowanie tutaj",
+    "description": "Ostateczna lokalizacja drona"
 }}"""
                 },
                 {
@@ -53,8 +52,9 @@ Output format:
             temperature=0.0,
         )
         
+        # Remove the encoding parameter from json.loads
         result = json.loads(response.choices[0].message.content.strip())
-        print(f"\nLLM Analysis:\nInput: {instruction}\nOutput: {json.dumps(result, indent=2)}\n")
+        print(f"\nLLM Analysis:\nInput: {instruction}\nOutput: {json.dumps(result, indent=2, ensure_ascii=False)}\n")
         
         return result
     except Exception as e:
@@ -82,18 +82,24 @@ def webhook():
     """Handle incoming webhook requests"""
     try:
         data = request.get_json()
-        print(f"\nReceived webhook request: {json.dumps(data, indent=2)}")
+        print(f"\nReceived webhook request: {json.dumps(data, indent=2, ensure_ascii=False)}")
         
-        if not data or 'instruction' not in data:
+        if not isinstance(data, dict):
+            return jsonify({"error": "Invalid request format"}), 400
+        if not data.get('instruction'):
             return jsonify({"error": "Missing instruction"}), 400
+        if not isinstance(data['instruction'], str):
+            return jsonify({"error": "Instruction must be a string"}), 400
         
         result = analyze_drone_location(data['instruction'])
-        print(f"Sending response: {json.dumps(result, indent=2)}")
+        print(f"Sending response: {json.dumps(result, indent=2, ensure_ascii=False)}")
         return jsonify(result)
-        
+    
+    except json.JSONDecodeError:
+        return jsonify({"error": "Invalid JSON"}), 400
     except Exception as e:
         print(f"Error processing webhook: {str(e)}")
-        return jsonify({"error": str(e)}), 500
+        return jsonify({"error": "Internal server error"}), 500
 
 def main():
     global client, map_content
@@ -108,7 +114,7 @@ def main():
         if args.start:
             print("\nSending webhook URL to API...")
             response = send_webhook_url()
-            print(f"Response: {json.dumps(response, indent=2)}")
+            print(f"Response: {json.dumps(response, indent=2, ensure_ascii=False)}")
             return
             
         print("\nLoading map data...")
@@ -123,7 +129,7 @@ def main():
             
         port = int(webhook_port)
         print(f"\nStarting webhook server on port {port}...")
-        app.run(host='localhost', port=port, debug=True)
+        app.run(host='127.0.0.1', port=port)
         
     except Exception as e:
         print(f"Error: {str(e)}")
