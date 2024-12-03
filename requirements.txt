@@ -5,3 +5,5 @@ qdrant-client
 neo4j
 firecrawl
 flask
+PyPDF2
+Pillow
