@@ -16,7 +16,7 @@ nie mogę uwierzyć, że jestem
 w 20... roku. To nienormalne!
 
 Jestem normalny.To wszystko dzieje sięnaprawdę. Jestem normalny.To jest rzeczywistość.Jestem normalny. Wiem,gdzie jestem i kim jestem.Jestem normalny. Towszystko w koło. To jestnormalne. Jestem normalny.Mam na imię Rafał. Jestemnormalny. Świat jestnienormalny.
-{{FLG:PLAINTEXT}}
+{{FLG:XXX}}
 Spotkałem Azazela,
 a przynajmniej tak się
 przedstawił ten człowiek.
@@ -48,7 +48,7 @@ które dostarczyłem. Wszystko
 dzieje się tak szybko!
 Czy ja właśnie pisze nową
 historię? TAK! Zmieniam świat
-i widzę efekty tych zmian. 
+i widzę efekty tych zmian.
 JESTEM Z TEGO DUMNY!TAK!
 W idealnym momencie zjawiłem
 się w Grudziądzu. Wszystko
@@ -62,7 +62,7 @@ drugiego dna?
 Tylko kto jest mózgiem tej misji?
 Adam, czy Azazel?
 RAVWrócę?
-![Obraz przedstawia szkicowane portret osoby o wyrazistych rysach twarzy, z nieładnie ułożonymi włosami i wyrazem zmartwienia.](image_3.png)
+![Obraz przedstawia szkic mężczyzny z rozwichrzonymi włosami i wyrazistymi rysami twarzy.](images/image_3.png)
 
 Czekają mnie dwa lata bardzo
 intensywnej nauki. Adam mówi,
@@ -81,7 +81,7 @@ bo jeden był dobry, ale nie ten co
 go wybrałem? może ja nie ratuję
 wcale świata?
 po której stronie jestem?
-![Obraz przedstawia plamę sosu pomidorowego na czarnym tle, otoczoną mniejszymi kroplami w kolorze pomarańczowym.](image_5.png)
+![Obraz przedstawia rozprysk czerwonego sosu na czarnym tle.](images/image_5.png)
 
 Zmieniłem się.
 Wszystko się zmieniło.
@@ -93,9 +93,9 @@ Tyle lat odosobnienia.
 W co ja się wpakowałem?
 Który mamy rok?
 When am I?
-![Obraz przedstawia szkicowane portret osoby z nieładnie ułożonymi włosami i wyrazem twarzy pełnym zdziwienia lub niepokoju.](image_6.png)
+![Obraz przedstawia szczegółowy szkic twarzy mężczyzny z rozczochranymi włosami i wyrazistym wyrazem twarzy.](images/image_6.png)
 
-![Obraz przedstawia różnorodne, okrągłe struktury w odcieniach brązu, które mogą przypominać komórki lub cząsteczki w mikroskopijnym ujęciu.](image_7.png)
+![Obraz przedstawia brązowe plamy na czarnym tle.](images/image_7.png)
 
 Nie da się żyć z tą wiedzą.
 Wspierając demony sam stajesz
@@ -105,7 +105,7 @@ Przecież znam przyszłość.
 Pomogłem Andrzejowi,
 ale oni mnie
 wykorzystali.
-![Obraz przedstawia odcisk dłoni w czerwonym kolorze, przypominający plamę krwi, na czarnym tle.](image_8.png)
+![Obraz przedstawia czerwoną odcisk dłoni na czarnym tle.](images/image_8.png)
 
 Śniły mi się drony nad miastem.
 Te, które znałem z opowieści Adama.
@@ -116,7 +116,7 @@ aby to co mówi, było prawdą.
 Może ta przyszłość nigdy
 nie nadejdzie?
 
-![Obraz przedstawia szkic drona z widocznymi detalami konstrukcyjnymi i wirnikami.](image_9.png)
+![Obraz przedstawia szkic drona z czterema wirnikami.](images/image_9.png)
 
 Byłem na przesłuchaniu i pytali o Andrzeja. No to powiedziałem, co wiedziałem. I nie wiem, jak to się dalej potoczy. Siedzę tu już dostatecznie długo, żeby wszystko przemyśleć. Wiem teraz więcej niż wcześniej. I nie chodzi o wiedzę techniczną. Wszystko sobie poukładałem. Te demony czekały na odkrycie.
 Powinni Barbarę przesłuchać. Ona wie wszystko. Rozmawiałemz nią.
@@ -144,7 +144,7 @@ Zatrzymam się tu na
 jakiś czas.
 Iz 2:19Trochę tu zimno i ciemno,
 ale bezpiecznie.
-![Obraz przedstawia surrealistyczną, górską scenerię z dużą jaskinią, do której prowadzi wąska ścieżka, a w tle widoczne są ostre, skaliste formacje.](image_13.png)
+![Obraz przedstawia osobę stojącą przed dużą, ciemną jaskinią w skalistym krajobrazie.](images/image_13.png)
 
 Na spotkanie z demonem
 trzeba się przygotować.
@@ -170,4 +170,4 @@ odwrócić.
 Zdjęcia odnalezionych
 fragmentów strony
 
-![Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 2238 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy.](image_16.png)
+![Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 228 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy.](images/image_16.png)

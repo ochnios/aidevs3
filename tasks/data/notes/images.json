@@ -7,30 +7,30 @@
   },
   "image_3.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia szkicowane portret osoby o wyrazistych rysach twarzy, z nieładnie ułożonymi włosami i wyrazem zmartwienia."
+    "description": "Obraz przedstawia szkic mężczyzny z rozwichrzonymi włosami i wyrazistymi rysami twarzy."
   },
   "image_4.png": {
     "type": "IRRELEVANT"
   },
   "image_5.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia plamę sosu pomidorowego na czarnym tle, otoczoną mniejszymi kroplami w kolorze pomarańczowym."
+    "description": "Obraz przedstawia rozprysk czerwonego sosu na czarnym tle."
   },
   "image_6.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia szkicowane portret osoby z nieładnie ułożonymi włosami i wyrazem twarzy pełnym zdziwienia lub niepokoju."
+    "description": "Obraz przedstawia szczegółowy szkic twarzy mężczyzny z rozczochranymi włosami i wyrazistym wyrazem twarzy."
   },
   "image_7.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia różnorodne, okrągłe struktury w odcieniach brązu, które mogą przypominać komórki lub cząsteczki w mikroskopijnym ujęciu."
+    "description": "Obraz przedstawia brązowe plamy na czarnym tle."
   },
   "image_8.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia odcisk dłoni w czerwonym kolorze, przypominający plamę krwi, na czarnym tle."
+    "description": "Obraz przedstawia czerwoną odcisk dłoni na czarnym tle."
   },
   "image_9.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia szkic drona z widocznymi detalami konstrukcyjnymi i wirnikami."
+    "description": "Obraz przedstawia szkic drona z czterema wirnikami."
   },
   "image_10.png": {
     "type": "IRRELEVANT"
@@ -43,13 +43,17 @@
   },
   "image_13.png": {
     "type": "RELEVANT",
-    "description": "Obraz przedstawia surrealistyczną, górską scenerię z dużą jaskinią, do której prowadzi wąska ścieżka, a w tle widoczne są ostre, skaliste formacje."
+    "description": "Obraz przedstawia osobę stojącą przed dużą, ciemną jaskinią w skalistym krajobrazie."
   },
   "image_14.png": {
     "type": "IRRELEVANT"
   },
   "image_15.png": {
     "type": "IRRELEVANT"
+  },
+  "image_16.png": {
+    "type": "TEXT",
+    "text": "Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 228 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy."
   },
   "image_17.png": {
     "type": "IRRELEVANT"
@@ -65,9 +69,5 @@
   },
   "image_21.png": {
     "type": "IRRELEVANT"
-  },
-  "image_16.png": {
-    "type": "TEXT",
-    "text": "Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 2238 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy."
   }
 }

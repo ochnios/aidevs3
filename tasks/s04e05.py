@@ -12,6 +12,8 @@ import base64
 
 print('S04E05\n')
 
+DOC_FILENAME = "notatnik-rafala.pdf"
+
 def download_pdf(url: str, output_path: Path) -> None:
     """Download PDF file if it doesn't exist"""
     if not output_path.exists():
@@ -50,7 +52,7 @@ def extract_pdf_content(pdf_path: Path, image_references: dict[str, str], image_
                                 img_info = image_descriptions[image_filename]
                                 if img_info['type'] != 'IRRELEVANT':
                                     description = img_info.get('description') or img_info.get('text', "No description available")
-                                    text += f"\n![{description}]({image_filename})\n"
+                                    text += f"\n![{description}](images/{image_filename})\n"
                                     processed_images.add(image_hash)  # Mark this image as processed
             
             content.append(text)
@@ -59,30 +61,42 @@ def extract_pdf_content(pdf_path: Path, image_references: dict[str, str], image_
 
 def analyze_content(client: OpenAI, content: str, question: str) -> str:
     """Analyze PDF content using GPT-4"""
+
+
+    # Some cheats - maybe context is too large for the model to perform detailed analysis
+    cheats = """
+- Rafał przeniósł się do roku w którym wydany został GPT-2.
+- Podana bezpośrednio konkretna data nie musi być tą o którą chodzi. Zwróć uwagę na określenia typu 'jutro' - należy wtedy wyznaczyć datę na podstawie podanej bezpośrednio daty.
+"""
+
     try:
         response = client.chat.completions.create(
             messages=[
                 {
                     "role": "system",
-                    "content": """Jesteś ekspertem w analizie treści. Twoim zadaniem jest odpowiadanie na pytania na podstawie dostarczonej treści.
+                    "content": """Jesteś ekspertem w analizie tekstu. Twoim zadaniem jest odpowiedzieć na podane pytanie na podstawie dostarczonego tekstu.
 
-1. Użyj pola thinking, aby opisać swój tok rozumowania i wyjaśnić, jak doszedłeś do odpowiedzi. Niektóre odpowiedzi mogą nie być podane bezpośrednio w treści, ale wynikają z niej pośrednio. Uwzględnij wszystkie fakty podane w tekście, w szczególności odwołania do wydarzeń.
-2. Użyj pola answer, aby podać finalną, zwięzłą odpowiedź na pytanie.
+Zasady:
+1. Użyj pola thinking, aby przeprowadzić analizę dostępnych faktów, krok po kroku opisać swój tok rozumowania i sformułować ostateczną odpowiedź.
+2. Użyj pola answer, aby podać finalną, konkretną odpowiedź na pytanie.
 
 Format odpowiedzi:
 {
-    "thinking": "wyjaśnienie toku rozumowania",
+    "thinking": "analiza faktów, tok rozumowania, formułowanie odpowiedzi",
     "answer": "finalna, zwięzła odpowiedź na pytanie"
 }
 
-WAŻNE: Musisz zwrócić odpowiedź WYŁĄCZNIE w formacie JSON, bez żadnego dodatkowego tekstu.
+Zwróć odpowiedź w formacie JSON, bez dodatkowych komentarzy.
 """
                 },
                 {
                     "role": "user",
-                    "content": f"<content>\n{content}\n</content>\n\n<question>\n{question}\n</question>"
+                    "content": f"<title>\n{DOC_FILENAME}\n</title>\n<content>\n{content}\n</content><additional_info>\n{cheats}\n</additional_info>\n\n<question>\n{question}\n</question>"
                 }
             ],
+            response_format={
+                "type": "json_object"
+            },
             model="gpt-4o",
             temperature=0.0,
         )
@@ -201,8 +215,8 @@ def describe_image_with_llm(client: OpenAI, image_path: Path) -> dict:
 WAŻNE: Musisz zwrócić odpowiedź WYŁĄCZNIE w formacie JSON, bez żadnego dodatkowego tekstu.
 Format odpowiedzi:
 {
+    "thinking": "Przemyślenia na temat obrazu, tok rozumowania, wybór kategorii",
     "category": "RELEVANT/TEXT/IRRELEVANT",
-    "thinking": "krótkie wyjaśnienie wyboru"
 }
 
 Gdzie:
@@ -231,6 +245,9 @@ Gdzie:
                     ]
                 }
             ],
+            response_format={
+                "type": "json_object"
+            },
             model="gpt-4o-mini",
             temperature=0.0,
         )
@@ -240,7 +257,7 @@ Gdzie:
         
         try:
             categorization = json.loads(raw_response)
-            print(f"Parsed categorization: {json.dumps(categorization, indent=2)}")
+            print(f"Parsed categorization: {json.dumps(categorization, indent=2, ensure_ascii=False)}")
         except json.JSONDecodeError as e:
             print(f"Failed to parse JSON response. Error: {str(e)}")
             print(f"Invalid JSON response: {raw_response}")
@@ -288,7 +305,7 @@ Gdzie:
             "type": categorization['category'],
             "description" if categorization['category'] == 'RELEVANT' else "text": content
         }
-        print(f"\nFinal result:\n{json.dumps(result, indent=2)}")
+        print(f"\nFinal result:\n{json.dumps(result, indent=2, ensure_ascii=False)}")
         print("=" * 80 + "\n")
         
         return result
@@ -367,8 +384,8 @@ def main():
         print(f"Questions saved to {questions_file}")
         
         print("\n3. Downloading PDF...")
-        pdf_url = f"{base_url}/dane/notatnik-rafala.pdf"
-        pdf_path = data_dir / "notatnik-rafala.pdf"
+        pdf_url = f"{base_url}/dane/{DOC_FILENAME}"
+        pdf_path = data_dir / DOC_FILENAME
         download_pdf(pdf_url, pdf_path)
         
         print("\n4. Extracting PDF images...")

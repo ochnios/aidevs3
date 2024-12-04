@@ -1,0 +1,545 @@
+S04E05
+
+
+1. Setting up directories...
+
+2. Getting questions...
+Questions saved to data\notes\questions.json
+
+3. Downloading PDF...
+Downloaded PDF to data\notes\notatnik-rafala.pdf
+
+4. Extracting PDF images...
+Extracted unique image: data\notes\images\image_1.jpg
+Extracted unique image: data\notes\images\image_2.png
+Extracted unique image: data\notes\images\image_3.png
+Extracted unique image: data\notes\images\image_4.png
+Extracted unique image: data\notes\images\image_5.png
+Extracted unique image: data\notes\images\image_6.png
+Extracted unique image: data\notes\images\image_7.png
+Extracted unique image: data\notes\images\image_8.png
+Extracted unique image: data\notes\images\image_9.png
+Extracted unique image: data\notes\images\image_10.png
+Extracted unique image: data\notes\images\image_11.png
+Extracted unique image: data\notes\images\image_12.png
+Extracted unique image: data\notes\images\image_13.png
+Extracted unique image: data\notes\images\image_14.png
+Extracted unique image: data\notes\images\image_15.png
+Extracted unique image: data\notes\images\image_16.png
+Extracted unique image: data\notes\images\image_17.png
+Extracted unique image: data\notes\images\image_18.png
+Extracted unique image: data\notes\images\image_19.png
+Extracted unique image: data\notes\images\image_20.png
+Extracted unique image: data\notes\images\image_21.png
+Extracted 21 unique images
+
+5. Generating image descriptions...
+
+=== Processing image: data\notes\images\image_1.jpg ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia pustą stronę papieru w linię, co nie zawiera żadnych rozpoznawalnych obiektów ani tekstu. Jest to typowy przykład pustej kartki, która nie ma żadnej wartości informacyjnej.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia pustą stronę papieru w linię, co nie zawiera żadnych rozpoznawalnych obiektów ani tekstu. Jest to typowy przykład pustej kartki, która nie ma żadnej wartości informacyjnej.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_1.jpg: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_2.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia plamę, która nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to abstrakcyjny kształt, który nie ma konkretnego znaczenia ani kontekstu.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia plamę, która nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to abstrakcyjny kształt, który nie ma konkretnego znaczenia ani kontekstu.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_2.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_3.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia rysunek postaci z wyraźnymi cechami, co czyni go rozpoznawalnym obiektem. Nie jest to tekst ani coś nierozpoznawalnego.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia rysunek postaci z wyraźnymi cechami, co czyni go rozpoznawalnym obiektem. Nie jest to tekst ani coś nierozpoznawalnego.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia szkic mężczyzny z rozwichrzonymi włosami i wyrazistymi rysami twarzy.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia szkic mężczyzny z rozwichrzonymi włosami i wyrazistymi rysami twarzy."
+}
+================================================================================
+
+Generated description for image_3.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia szkic mężczyzny z rozwichrzonymi włosami i wyrazistymi rysami twarzy.'} 
+
+=== Processing image: data\notes\images\image_4.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia plamy i rozpryski, które nie są rozpoznawalnymi obiektami ani tekstem. Wygląda na to, że jest to abstrakcyjny wzór, który nie ma konkretnego znaczenia ani kontekstu. Dlatego nie można go zaklasyfikować jako istotny ani tekstowy.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia plamy i rozpryski, które nie są rozpoznawalnymi obiektami ani tekstem. Wygląda na to, że jest to abstrakcyjny wzór, który nie ma konkretnego znaczenia ani kontekstu. Dlatego nie można go zaklasyfikować jako istotny ani tekstowy.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_4.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_5.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia plamę sosu na czarnym tle, co sugeruje, że jest to rozpoznawalny obiekt związany z jedzeniem. Plama ma wyraźne kształty i kolory, co czyni ją interesującą wizualnie.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia plamę sosu na czarnym tle, co sugeruje, że jest to rozpoznawalny obiekt związany z jedzeniem. Plama ma wyraźne kształty i kolory, co czyni ją interesującą wizualnie.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia rozprysk czerwonego sosu na czarnym tle.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia rozprysk czerwonego sosu na czarnym tle."
+}
+================================================================================
+
+Generated description for image_5.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia rozprysk czerwonego sosu na czarnym tle.'}
+
+=== Processing image: data\notes\images\image_6.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia rysunek postaci z wyraźnymi cechami, co czyni go rozpoznawalnym obiektem. Nie jest to tekst ani pusty obraz, więc kategoria 'RELEVANT' jest odpowiednia.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia rysunek postaci z wyraźnymi cechami, co czyni go rozpoznawalnym obiektem. Nie jest to tekst ani pusty obraz, więc kategoria 'RELEVANT' jest odpowiednia.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia szczegółowy szkic twarzy mężczyzny z rozczochranymi włosami i wyrazistym wyrazem twarzy.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia szczegółowy szkic twarzy mężczyzny z rozczochranymi włosami i wyrazistym wyrazem twarzy."
+}
+================================================================================
+
+Generated description for image_6.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia szczegółowy szkic twarzy mężczyzny z rozczochranymi włosami i wyrazistym wyrazem twarzy.'}
+
+=== Processing image: data\notes\images\image_7.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia różne kształty i formy, które mogą przypominać mikroorganizmy lub cząsteczki. Są to rozpoznawalne obiekty, mimo że nie są one jednoznacznie zidentyfikowane. Dlatego klasyfikuję go jako RELEVANT.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia różne kształty i formy, które mogą przypominać mikroorganizmy lub cząsteczki. Są to rozpoznawalne obiekty, mimo że nie są one jednoznacznie zidentyfikowane. Dlatego klasyfikuję go jako RELEVANT.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia brązowe plamy na czarnym tle.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia brązowe plamy na czarnym tle."
+}
+================================================================================
+
+Generated description for image_7.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia brązowe plamy na czarnym tle.'}
+
+=== Processing image: data\notes\images\image_8.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia odcisk dłoni w czerwonym kolorze, co sugeruje, że jest to rozpoznawalny obiekt. Odcisk dłoni jest wyraźny i można go zidentyfikować jako element artystyczny lub symboliczny.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia odcisk dłoni w czerwonym kolorze, co sugeruje, że jest to rozpoznawalny obiekt. Odcisk dłoni jest wyraźny i można go zidentyfikować jako element artystyczny lub symboliczny.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia czerwoną odcisk dłoni na czarnym tle.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia czerwoną odcisk dłoni na czarnym tle."
+}
+================================================================================
+
+Generated description for image_8.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia czerwoną odcisk dłoni na czarnym tle.'}
+
+=== Processing image: data\notes\images\image_9.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia szkic drona, który jest rozpoznawalnym obiektem technologicznym. Szkic jest wyraźny i przedstawia szczegóły konstrukcji drona, co czyni go odpowiednim do kategorii RELEVANT.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia szkic drona, który jest rozpoznawalnym obiektem technologicznym. Szkic jest wyraźny i przedstawia szczegóły konstrukcji drona, co czyni go odpowiednim do kategorii RELEVANT.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia szkic drona z czterema wirnikami.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia szkic drona z czterema wirnikami."
+}
+================================================================================
+
+Generated description for image_9.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia szkic drona z czterema wirnikami.'}
+
+=== Processing image: data\notes\images\image_10.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia plamy na białym tle, które nie są rozpoznawalnymi obiektami. Nie zawiera tekstu ani żadnych wyraźnych kształtów. Dlatego klasyfikuję go jako nieistotny.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia plamy na białym tle, które nie są rozpoznawalnymi obiektami. Nie zawiera tekstu ani żadnych wyraźnych kształtów. Dlatego klasyfikuję go jako nieistotny.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_10.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_11.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia abstrakcyjne kształty i plamy, które nie są rozpoznawalnymi obiektami. Nie zawiera tekstu ani żadnych wyraźnych elementów, które można by zaklasyfikować jako istotne. Dlatego klasyfikuję go jako nieistotny.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia abstrakcyjne kształty i plamy, które nie są rozpoznawalnymi obiektami. Nie zawiera tekstu ani żadnych wyraźnych elementów, które można by zaklasyfikować jako istotne. Dlatego klasyfikuję go jako nieistotny.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_11.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_12.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia plamę, która nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to abstrakcyjny wzór, który nie ma konkretnego znaczenia ani kontekstu.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia plamę, która nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to abstrakcyjny wzór, który nie ma konkretnego znaczenia ani kontekstu.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_12.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_13.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia rysunek przedstawiający górski krajobraz z jaskinią. Jest to rozpoznawalny obiekt, więc kategoria to RELEVANT.",
+    "category": "RELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia rysunek przedstawiający górski krajobraz z jaskinią. Jest to rozpoznawalny obiekt, więc kategoria to RELEVANT.",
+  "category": "RELEVANT"
+}
+
+[Description Step]
+Selected prompt for RELEVANT:
+Jesteś ekspertem w analizie obrazów. Opisz zawartość obrazu jednym zwięzłym zdaniem, rozpoczynając od 'Obraz przedstawia...'
+Description response:
+Obraz przedstawia osobę stojącą przed dużą, ciemną jaskinią w skalistym krajobrazie.
+
+Final result:
+{
+  "type": "RELEVANT",
+  "description": "Obraz przedstawia osobę stojącą przed dużą, ciemną jaskinią w skalistym krajobrazie."
+}
+================================================================================
+
+Generated description for image_13.png: {'type': 'RELEVANT', 'description': 'Obraz przedstawia osobę stojącą przed dużą, ciemną jaskinią w skalistym krajobrazie.'}   
+
+=== Processing image: data\notes\images\image_14.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia abstrakcyjny kształt w odcieniach niebieskiego i szarości, który nie zawiera rozpoznawalnych obiektów ani tekstu. Jest to bardziej forma artystyczna niż coś konkretnego.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia abstrakcyjny kształt w odcieniach niebieskiego i szarości, który nie zawiera rozpoznawalnych obiektów ani tekstu. Jest to bardziej forma artystyczna niż coś konkretnego.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_14.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_15.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia pustą stronę papieru, bez żadnych rozpoznawalnych obiektów czy tekstu. Nie zawiera żadnych informacji wizualnych, które mogłyby być użyteczne. Dlatego klasyfikuję go jako nieistotny.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia pustą stronę papieru, bez żadnych rozpoznawalnych obiektów czy tekstu. Nie zawiera żadnych informacji wizualnych, które mogłyby być użyteczne. Dlatego klasyfikuję go jako nieistotny.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_15.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_16.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz zawiera tekst napisany odręcznie na kartce w kratkę. Jest to wyraźny tekst, który można odczytać, co kwalifikuje go do kategorii tekstu.",     
+    "category": "TEXT"
+}
+Parsed categorization: {
+  "thinking": "Obraz zawiera tekst napisany odręcznie na kartce w kratkę. Jest to wyraźny tekst, który można odczytać, co kwalifikuje go do kategorii tekstu.",       
+  "category": "TEXT"
+}
+
+[Description Step]
+Selected prompt for TEXT:
+Jesteś ekspertem w analizie tekstu z obrazów. Przepisz dokładnie tekst widoczny na obrazie. Nie dodawaj żadnych komentarzy.
+Description response:
+Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 228 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy.
+
+Final result:
+{
+  "type": "TEXT",
+  "text": "Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 228 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy."
+}
+================================================================================
+
+Generated description for image_16.png: {'type': 'TEXT', 'text': 'Wszystko zostało zaplanowane. Jestem gotowy, a Andrzej przyjdzie tutaj niebawem. Barbara mówi, że dobrze robię i mam się nie bać. Kolejne pokolenia mi za to wszystko podziękują. Władza robotów w 228 nie nastąpi, a sztuczna inteligencja będzie tylko narzędziem w rękach ludzi, a nie na odwrót. To jest ważne. Wszystko mi się miesza, ale Barbara obiecała, że po wykonaniu zadania wykonamy skok do czasów, gdzie moje schorzenie jest w pełni wyleczalne. Wróci moja dawna osobowość. Wróci normalność i wróci ład w mojej głowie. To wszystko jest na wyciągnięcie ręki. Muszę tylko poczekać na Andrzeja, a później użyć jego samochodu, aby się dostać do Lubawy koło Grudziądza. Nie jest to daleko. Mam tylko nadzieję, że Andrzejek będzie miał dostatecznie dużo paliwa. Tankowanie nie wchodzi w grę, bo nie mam kasy.'}
+
+=== Processing image: data\notes\images\image_17.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia nieczytelny, zamazany lub uszkodzony materiał, który nie zawiera rozpoznawalnych obiektów ani tekstu. Dlatego nie można go zaklasyfikować jako istotny ani tekstowy.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia nieczytelny, zamazany lub uszkodzony materiał, który nie zawiera rozpoznawalnych obiektów ani tekstu. Dlatego nie można go zaklasyfikować jako istotny ani tekstowy.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_17.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_18.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia przezroczysty, elastyczny materiał, który nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Wygląda na fragment folii lub opakowania, co nie kwalifikuje się jako istotny obiekt. Dlatego klasyfikuję go jako nieistotny.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia przezroczysty, elastyczny materiał, który nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Wygląda na fragment folii lub opakowania, co nie kwalifikuje się jako istotny obiekt. Dlatego klasyfikuję go jako nieistotny.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_18.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_19.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia przezroczysty kawałek folii, który nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to materiał, który nie ma konkretnego znaczenia ani kontekstu wizualnego. Dlatego klasyfikuję go jako nieistotny.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia przezroczysty kawałek folii, który nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to materiał, który nie ma konkretnego znaczenia ani kontekstu wizualnego. Dlatego klasyfikuję go jako nieistotny.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_19.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_20.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia przezroczysty, elastyczny obiekt, który nie jest rozpoznawalny jako konkretny przedmiot. Nie zawiera tekstu ani rozpoznawalnych obiektów. Dlatego klasyfikuję go jako nieistotny.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia przezroczysty, elastyczny obiekt, który nie jest rozpoznawalny jako konkretny przedmiot. Nie zawiera tekstu ani rozpoznawalnych obiektów. Dlatego klasyfikuję go jako nieistotny.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_20.png: {'type': 'IRRELEVANT'}
+
+=== Processing image: data\notes\images\image_21.png ===
+
+[Categorization Step]
+
+Raw LLM response:
+{
+    "thinking": "Obraz przedstawia przezroczysty kawałek plastiku, który nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to bardziej abstrakcyjny kształt, który nie pasuje do kategorii RELEVANT ani TEXT.",
+    "category": "IRRELEVANT"
+}
+Parsed categorization: {
+  "thinking": "Obraz przedstawia przezroczysty kawałek plastiku, który nie jest rozpoznawalnym obiektem ani nie zawiera tekstu. Jest to bardziej abstrakcyjny kształt, który nie pasuje do kategorii RELEVANT ani TEXT.",
+  "category": "IRRELEVANT"
+}
+Generated description for image_21.png: {'type': 'IRRELEVANT'}
+
+6. Extracting PDF content with image references and descriptions...
+Content with images and descriptions saved to data\notes\content.md
+
+7. Processing questions...
+
+Processing question 01: Do którego roku przeniósł się Rafał
+
+Raw LLM response:
+{
+    "thinking": "Rafał wspomina, że przeniósł się do roku, w którym wydany został GPT-2. W tekście jest również mowa o tym, że GPT-2 powstało dzięki badaniom, które dostarczył. Wiemy, że GPT-2 zostało wydane w 2019 roku. Zatem Rafał przeniósł się do roku 2019.",
+    "answer": "2019"
+}
+Parsed response: {
+  "thinking": "Rafał wspomina, że przeniósł się do roku, w którym wydany został GPT-2. W tekście jest również mowa o tym, że GPT-2 powstało dzięki badaniom, które dostarczył. Wiemy, że GPT-2 zostało wydane w 2019 roku. Zatem Rafał przeniósł się do roku 2019.",
+  "answer": "2019"
+}
+Answer for question 01: 2019
+
+Processing question 02: Kto wpadł na pomysł, aby Rafał przeniósł się w czasie?
+
+Raw LLM response:
+{
+    "thinking": "W tekście Rafał wspomina o Adamie, który według jego wyliczeń wybrał rok, w którym powinni rozpocząć pracę nad technologią LLM. Rafał zastanawia się, kto jest mózgiem misji - Adam czy Azazel. Jednak to Adam jest wymieniony jako osoba, która wybrała konkretny rok do rozpoczęcia prac, co sugeruje, że to on mógł wpaść na pomysł przeniesienia Rafała w czasie.",
+    "answer": "Adam wpadł na pomysł, aby Rafał przeniósł się w czasie."
+}
+Parsed response: {
+  "thinking": "W tekście Rafał wspomina o Adamie, który według jego wyliczeń wybrał rok, w którym powinni rozpocząć pracę nad technologią LLM. Rafał zastanawia się, kto jest mózgiem misji - Adam czy Azazel. Jednak to Adam jest wymieniony jako osoba, która wybrała konkretny rok do rozpoczęcia prac, co sugeruje, że to on mógł wpaść na pomysł przeniesienia Rafała w czasie.",
+  "answer": "Adam wpadł na pomysł, aby Rafał przeniósł się w czasie."
+}
+Answer for question 02: Adam wpadł na pomysł, aby Rafał przeniósł się w czasie.
+
+Processing question 03: Gdzie znalazł schronienie Rafał? Nazwij krótko to miejsce
+
+Raw LLM response:
+{
+    "thinking": "Rafał wspomina, że znalazł miejsce schronienia, które nie jest szczególnie oddalone od miasta, w którym spędził ostatnie lata. Opisuje to miejsce jako zimne, ciemne, ale bezpieczne. Wspomina również o ochrowej ziemi, lesie, skałach i śniegu, co sugeruje, że jest to miejsce naturalne, prawdopodobnie w górach lub w lesie. Wspomina także o jaskini, co wskazuje, że to właśnie jaskinia jest jego schronieniem.",
+    "answer": "jaskinia"
+}
+Parsed response: {
+  "thinking": "Rafał wspomina, że znalazł miejsce schronienia, które nie jest szczególnie oddalone od miasta, w którym spędził ostatnie lata. Opisuje to miejsce jako zimne, ciemne, ale bezpieczne. Wspomina również o ochrowej ziemi, lesie, skałach i śniegu, co sugeruje, że jest to miejsce naturalne, prawdopodobnie w górach lub w lesie. Wspomina także o jaskini, co wskazuje, że to właśnie jaskinia jest jego schronieniem.",
+  "answer": "jaskinia"
+}
+Answer for question 03: jaskinia
+
+Processing question 04: Którego dnia Rafał ma spotkanie z Andrzejem? (format: YYYY-MM-DD)
+
+Raw LLM response:
+{
+    "thinking": "W treści dokumentu Rafał wspomina o spotkaniu z Andrzejem, które ma się odbyć 'jutro'. Bezpośrednio przed tym stwierdzeniem znajduje się data '11 listopada 2024'. Zatem, jeśli spotkanie ma się odbyć 'jutro' po 11 listopada 2024, to oznacza, że spotkanie jest zaplanowane na 12 listopada 2024.",
+    "answer": "2024-11-12"
+}
+Parsed response: {
+  "thinking": "W treści dokumentu Rafał wspomina o spotkaniu z Andrzejem, które ma się odbyć 'jutro'. Bezpośrednio przed tym stwierdzeniem znajduje się data '11 listopada 2024'. Zatem, jeśli spotkanie ma się odbyć 'jutro' po 11 listopada 2024, to oznacza, że spotkanie jest zaplanowane na 12 listopada 2024.",
+  "answer": "2024-11-12"
+}
+Answer for question 04: 2024-11-12
+
+Processing question 05: Gdzie się chce dostać Rafał po spotkaniu z Andrzejem?
+
+Raw LLM response:
+{
+    "thinking": "Rafał wspomina, że po spotkaniu z Andrzejem chce użyć jego samochodu, aby dostać się do Lubawy koło Grudziądza. W tekście jest mowa o planie, który zakłada podróż do tego miejsca po spotkaniu z Andrzejem. Rafał ma nadzieję, że Andrzej będzie miał wystarczająco dużo paliwa, ponieważ nie ma pieniędzy na tankowanie.",
+    "answer": "Rafał chce się dostać do Lubawy koło Grudziądza."
+}
+Parsed response: {
+  "thinking": "Rafał wspomina, że po spotkaniu z Andrzejem chce użyć jego samochodu, aby dostać się do Lubawy koło Grudziądza. W tekście jest mowa o planie, który zakłada podróż do tego miejsca po spotkaniu z Andrzejem. Rafał ma nadzieję, że Andrzej będzie miał wystarczająco dużo paliwa, ponieważ nie ma pieniędzy na tankowanie.", 
+  "answer": "Rafał chce się dostać do Lubawy koło Grudziądza."
+}
+Answer for question 05: Rafał chce się dostać do Lubawy koło Grudziądza.
+
+Final answers: {
+  "01": "2019",
+  "02": "Adam wpadł na pomysł, aby Rafał przeniósł się w czasie.",
+  "03": "jaskinia",
+  "04": "2024-11-12",
+  "05": "Rafał chce się dostać do Lubawy koło Grudziądza."
+}
+
+8. Sending answers to API...
+
+Response: {'code': 0, 'message': '{{FLG:XXX}}'}
