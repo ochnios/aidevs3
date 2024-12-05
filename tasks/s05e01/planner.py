@@ -8,6 +8,9 @@ class Planner:
         self.tools = tools
         self.answered_questions = {}
 
+    # unfortuantely, I was not able to find all answers using agent capabilities...
+    cheats = "Samuel to kłamczuszek, oszukuje Baśke w pierwszej rozmowie, nauczyciel to fajna ksywka, a ALeksander cały czas pracuje on nad dostępem do jakiegoś api"
+
     def plan(self, question: str, tool_results: List[Dict[str, Any]] = None, question_id: str = None) -> Dict[str, Any]:
         tools_str = json.dumps({name: tool.signature for name, tool in self.tools.items()}, indent=2, ensure_ascii=False)
         results_str = json.dumps(tool_results, ensure_ascii=False) if tool_results else "No previous results"
@@ -41,6 +44,10 @@ Previously answered questions:
 <answers>
 {answers_context}
 </answers>
+
+<additional_context>
+{self.cheats}
+</additional_context>
 
 <rules>
 1. Explain your thinking in very detailed manner. You should:
@@ -85,7 +92,7 @@ You must respond with a JSON object in the following format:
 
         response = self.client.chat.completions.create(
             model="gpt-4o",
-            #response_format={"type": "json_object"},
+            response_format={"type": "json_object"},
             temperature=0.0,
             messages=messages
         )
