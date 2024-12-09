@@ -64,7 +64,10 @@ def main():
             print(f"Question started at: {question_start}")
             
             tool_results = []
-            while True:
+            iterations = 0
+            max_iterations = 15
+            
+            while iterations < max_iterations:
                 print("=" * 80)
                 plan = planner.plan(question, tool_results, question_id)
                 print(f"\nPlan: {plan}")
@@ -77,13 +80,16 @@ def main():
                     result = tool.execute(parameters)
                     tool_results.append(result)
                     print(f"Tool result: {json.dumps(result, indent=2, ensure_ascii=False)}")
-                    
-                    # input("Press any key to continue...")
 
                 if plan["is_final"]:
                     answers[question_id] = plan['final_answer']
                     print(f"\nFinal answer: {answers[question_id]}")
                     break
+                    
+                iterations += 1
+            
+            if iterations >= max_iterations:
+                print(f"\nWarning: Maximum iterations ({max_iterations}) reached for question {question_id}")
 
             question_end = datetime.now()
             question_duration = question_end - question_start
