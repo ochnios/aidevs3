@@ -135,7 +135,7 @@ class GetPlaceInfoTool(Tool):
         return {
             "name": {
                 "type": "string",
-                "description": "Name of the place, without diacritics e.g. SLASK instead of Śląsk",
+                "description": "Name of the place should be uppercase and without diacritics e.g. SLASK instead of Śląsk",
                 "required": True
             }
         }
@@ -159,36 +159,35 @@ class GetPlaceInfoTool(Tool):
         
         return response.json()
     
-class GetPersonInfoTool(Tool):
+class GetPersonLocationTool(Tool):
     @property
     def name(self) -> str:
-        return "get_person_info"
+        return "get_person_location"
 
     @property
     def description(self) -> str:
-        return "Returns list of places where given person was seen"
+        return "Returns gps coordinates of given person"
 
     @property
     def signature(self) -> Dict[str, Any]:
         return {
-            "firstname": {
+            "userID": {
                 "type": "string",
-                "description": "First name of the person, without diacritics e.g. LUCJA instead of ŁUCJA",
+                "description": "User ID from the database",
                 "required": True
             }
         }
 
     def _execute(self, parameters: Dict[str, Any]) -> Any:
-        firstname = parameters.get("firstname")
-        if not firstname:
-            raise ValueError("First name is required")
+        userID = parameters.get("userID")
+        if not userID:
+            raise ValueError("User ID is required")
 
         payload = {
-            "apikey": os.getenv('AIDEVS_API_KEY'),
-            "query": firstname
+            "userID": userID
         }
         response = requests.post(
-            f"{os.getenv('AIDEVS_CENTRALA')}/people",
+            f"{os.getenv('AIDEVS_CENTRALA')}/gps",
             json=payload
         )
         
@@ -213,14 +212,16 @@ class SendReportTool(Tool):
                 "type": "dict",
                 "description": """Answer to send to the central API in format like:
 {
-    "name1": {
+    "firstname1": {
         "lat": 12.345,
         "lon": 65.431
     },
-    "name2": {
+    "firstname2": {
         "lat": 19.433,
         "lon": 12.123
     }
+
+Firstname of the person should be uppercase and without diacritics e.g. RAFAL instead of Rafał
 }
 """,
                 "required": True
@@ -234,7 +235,7 @@ class SendReportTool(Tool):
             raise ValueError("Answer is required")
             
         payload = {
-        "task": "database",
+        "task": "gps",
             "apikey": os.getenv('AIDEVS_API_KEY'),
             "answer": answer
         }
@@ -247,6 +248,48 @@ class SendReportTool(Tool):
             raise Exception(f"Failed to send report: {response.text}")
         
         return response.json()
+
+class GetTablesListTool(Tool):
+    @property
+    def name(self) -> str:
+        return "get_tables_list"
+
+    @property
+    def description(self) -> str:
+        return "Returns a list of tables in the database"
+
+    @property
+    def signature(self) -> Dict[str, Any]:
+        return {}
+
+    def _execute(self, parameters: Dict[str, Any]) -> Any:
+        return query_database("show tables")
+
+class GetTableSchemaTool(Tool):
+    @property
+    def name(self) -> str:
+        return "get_table_schema"
+
+    @property
+    def description(self) -> str:
+        return "Returns the schema of a specified table"
+
+    @property
+    def signature(self) -> Dict[str, Any]:
+        return {
+            "table_name": {
+                "type": "string",
+                "description": "Name of the table to fetch schema for",
+                "required": True
+            }
+        }
+
+    def _execute(self, parameters: Dict[str, Any]) -> Any:
+        table_name = parameters.get("table_name")
+        if not table_name:
+            raise ValueError("Table name is required")
+
+        return query_database(f"show create table {table_name}")
 
 class ToolRegistry:
     def __init__(self):

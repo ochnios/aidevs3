@@ -11,6 +11,12 @@ class Planner:
     def plan(self, question: str, tool_results: List[Dict[str, Any]] = None, question_id: str = None) -> Dict[str, Any]:
         tools_str = json.dumps({name: tool.signature for name, tool in self.tools.items()}, indent=2, ensure_ascii=False)
         results_str = json.dumps(tool_results, ensure_ascii=False) if tool_results else "No previous results"
+
+        hints = """
+Use get_place_info tool to get information about who was seen in place with Rafal
+Use database to fetch person identifiers by firstname
+Include Rafal location in report too
+"""
         
         messages = [
                 {
@@ -19,7 +25,7 @@ class Planner:
 
 Your task is to:
 1. Analyze the question and previous tool results (if any)
-2. Decide what tools to use next or provide final answer
+2. Decide what tools to use next or provide send report and create final answer
 
 Available tools with their signatures:
 <tools>
@@ -33,9 +39,11 @@ Already called tools with results:
 
 <rules>
 1. Explain your thinking in very detailed manner
+- explain what tools you should use to answer the question
+- explain why you chose these tools
+- validate if your reasoning is correct
 2. If you have enough information to answer the question, you should send report
-3. When you've finished your job, set is_final to true and provide the final answer for the user
-4. Final answer should be in a natural language with details what have you done and what was returned after the report
+3. After sending report, set is_final to true and provide the final answer in natural language based on the sent report response
 4. If a tool returned an error, analyze it and decide how to proceed.
 </rules>
 
@@ -60,7 +68,12 @@ You must respond with a JSON in the following format without any additional text
                 },
                 {
                     "role": "user",
-                    "content": question
+                    "content": f"""
+<hints>
+{hints}
+</hints>
+<question>{question}</question>
+"""
                 }
             ]
         
